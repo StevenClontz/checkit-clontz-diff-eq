@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<masterit>
+    <title>Differential Equations</title>
+    <author>Steven Clontz</author>
+    <url>https://clontz.org</url>
+    <slug>clontz-diff-eq</slug>
+    <objectives>
+        <objective>
+            <title>Homogeneous first-order linear IVP</title>
+            <slug>C1</slug>
+        </objective>
+        <objective>
+            <title>Non-homogeneous first-order linear ODE</title>
+            <slug>C2</slug>
+        </objective>
+        <objective>
+            <title>Homogeneous second-order linear ODE</title>
+            <slug>C3</slug>
+        </objective>
+        <objective>
+            <title>Homogeneous second-order linear IVP</title>
+            <slug>C4</slug>
+        </objective>
+        <objective>
+            <title>Non-homogeneous second-order linear ODE</title>
+            <slug>C5</slug>
+        </objective>
+        <objective>
+            <title>Discontinuous functions and distributions</title>
+            <slug>D1</slug>
+        </objective>
+        <objective>
+            <title>Laplace transforms from formula and definition</title>
+            <slug>D2</slug>
+        </objective>
+        <objective>
+            <title>Using Laplace transforms to solve IVPs</title>
+            <slug>D3</slug>
+        </objective>
+        <objective>
+            <title>Slope fields for first-order ODEs</title>
+            <slug>F1</slug>
+        </objective>
+    </objectives>
+</masterit>

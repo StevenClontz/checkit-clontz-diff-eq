@@ -1,0 +1,17 @@
+<exercise>
+  <statement>
+      <p>
+Compute the Laplace transform of
+<m>y = <xsl:value-of select="pretransform"/></m>by using a transform table.
+      </p>
+      <p>
+Then use the integral definition of the Laplace transform
+to obtain the same result.
+      </p>
+  </statement>
+  <answer>
+      <me>
+\mathcal{L}\{y\} = <xsl:value-of select="transform"/>
+      </me>
+  </answer>
+</exercise>

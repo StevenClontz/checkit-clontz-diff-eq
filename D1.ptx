@@ -1,0 +1,28 @@
+<exercise>
+  <statement>
+      <p>
+      Illustrustrate both of the following integrals. Then explain how
+        to compute each.
+      </p>
+      <me>
+          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
+          <xsl:value-of select="d_integrand"/>
+          \,dt
+          \hspace{2em}
+          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
+          <xsl:value-of select="u_integrand"/>
+          \,dt
+      </me>
+  </statement>
+  <answer>
+      <me>
+          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
+          <xsl:value-of select="d_integrand"/>
+          \,dt = <xsl:value-of select="d_int_value"/>
+          \hspace{2em}
+          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
+          <xsl:value-of select="u_integrand"/>
+          \,dt = <xsl:value-of select="u_int_value"/>
+      </me>
+  </answer>
+</exercise>
