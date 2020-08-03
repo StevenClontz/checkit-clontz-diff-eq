@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<masterit>
+<bank>
     <title>Differential Equations</title>
     <author>Steven Clontz</author>
     <url>https://clontz.org</url>
@@ -42,4 +42,4 @@
             <slug>F1</slug>
         </objective>
     </objectives>
-</masterit>
+</bank>

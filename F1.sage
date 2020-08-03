@@ -18,6 +18,7 @@ def generator():
 
     return {
         "field_sage": field_sage,
+#        "slope_field_url": data_url_graphic(plot_slope_field(ode.rhs(), (t,-5,5), (y,-5,5)),file_format="png"),
         "ode": ode,
         "y0": y0,
         "t0": t0,

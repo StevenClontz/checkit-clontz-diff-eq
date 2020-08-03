@@ -7,7 +7,7 @@ to produce the slope field for the ODE <m><xsl:value-of select="ode"/></m>.
       </p>
       <p>
 Let <m>y_p</m> be the solution to the following IVP.
-Explain how to use this slope field to approximate the
+Explain how to use its slope field to approximate the
 value of <m>y_p</m> at <m>t=<xsl:value-of select="othert"/></m>.
       </p>
       <me>
