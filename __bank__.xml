@@ -53,5 +53,13 @@
             <title>Separation of variables with variation of parameters</title>
             <slug>F4</slug>
         </objective>
+        <objective>
+            <title>Phase Planes</title>
+            <slug>S1</slug>
+        </objective>
+        <objective>
+            <title>Linear ODE system with elimination</title>
+            <slug>S2</slug>
+        </objective>
     </objectives>
 </bank>
