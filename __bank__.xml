@@ -41,5 +41,17 @@
             <title>Slope fields for first-order ODEs</title>
             <slug>F1</slug>
         </objective>
+        <objective>
+            <title>Phase lines for autonomous first-order ODEs</title>
+            <slug>F2</slug>
+        </objective>
+        <objective>
+            <title>Separation of variables</title>
+            <slug>F3</slug>
+        </objective>
+        <objective>
+            <title>Separation of variables with variation of parameters</title>
+            <slug>F4</slug>
+        </objective>
     </objectives>
 </bank>
