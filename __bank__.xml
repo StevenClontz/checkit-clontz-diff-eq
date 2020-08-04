@@ -61,5 +61,13 @@
             <title>Linear ODE system with elimination</title>
             <slug>S2</slug>
         </objective>
+        <objective>
+            <title>Existence/uniqueness theorem for linear IVPs</title>
+            <slug>N1</slug>
+        </objective>
+        <objective>
+            <title>Euler's method for approximating IVP solutions</title>
+            <slug>N2</slug>
+        </objective>
     </objectives>
 </bank>
