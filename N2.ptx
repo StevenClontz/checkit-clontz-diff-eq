@@ -1,0 +1,27 @@
+<exercise>
+  <statement>
+    <p>
+      Use Euler's method with <m>h=<xsl:value-of select="h"/></m> to approximate
+      <m>x(<xsl:value-of select="final/t"/>)</m> and <m>y(<xsl:value-of select="final/t"/>)</m> given the following
+      system of IVPs.
+    </p>
+    <me>
+        x'=<xsl:value-of select="xp"/>\hspace{2em}
+        x(<xsl:value-of select="init/t"/>)=<xsl:value-of select="init/x"/>
+    </me>
+    <me>
+        y'=<xsl:value-of select="yp"/>\hspace{2em}
+        y(<xsl:value-of select="init/t"/>)=<xsl:value-of select="init/y"/>
+    </me>
+  </statement>
+  <answer>
+    <ul>
+        <xsl:for-each select="vals/*">
+            <li>
+      <m>x(<xsl:value-of select="t"/>)\approx <xsl:value-of select="x"/></m> and 
+      <m>y(<xsl:value-of select="t"/>)\approx <xsl:value-of select="y"/></m>
+            </li>
+        </xsl:for-each>
+    </ul>
+  </answer>
+</exercise>

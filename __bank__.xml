@@ -54,6 +54,10 @@
             <slug>F4</slug>
         </objective>
         <objective>
+            <title>Implicit solutions for exact IVPs</title>
+            <slug>F5</slug>
+        </objective>
+        <objective>
             <title>Phase Planes</title>
             <slug>S1</slug>
         </objective>
