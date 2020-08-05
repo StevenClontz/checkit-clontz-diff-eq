@@ -1,0 +1,15 @@
+<exercise>
+  <statement>
+    <p>
+      Find the largest interval for which the Existence and Uniqueness
+      Theorem for Linear IVPs guarantees a unique solution for the following IVP.
+    </p>
+    <me>
+      <xsl:value-of select="ode"/>\hspace{2em}
+      x(<xsl:value-of select="t0"/>)=<xsl:value-of select="x0"/>
+    </me>
+  </statement>
+  <answer>
+    <me><xsl:value-of select="interval"/></me>
+  </answer>
+</exercise>

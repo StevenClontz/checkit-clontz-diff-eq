@@ -79,10 +79,6 @@
             <title>Substitution strategies</title>
             <slug>F6</slug>
         </objective>
-<!--        <objective>
-            <title>Phase Planes</title>
-            <slug>O1</slug>
-        </objective>-->
         <objective>
             <!-- 5.2, 7.10 -->
             <title>Linear ODE systems</title>
@@ -93,13 +89,28 @@
             <title>Existence/uniqueness theorem for linear IVPs</title>
             <slug>X2</slug>
         </objective>
-<!--        <objective>
-            <title>Euler's method for approximating IVP solutions</title>
-            <slug>O4</slug>
-        </objective> -->
+        <objective>
+            <!-- 1.2 -->
+            <title>Existence/uniqueness theorem for first-order IVPs</title>
+            <slug>X3</slug>
+        </objective>
+
+
+
         <!-- Modeling/Applications: -->
         <!-- 2.1, 3.1-3.5, 4.1, 5.1, 7.1 -->
         <!-- population models, heating and cooling of objects and buildings, acceleration-velocity models, motion in a resisting medium, mixing problems, modeling electric circuits -->
         <!-- Spring-Mass oscillators, Equations of Motion -->
+
+
+
+<!--        <objective>
+            <title>Phase Planes</title>
+            <slug>O1</slug>
+        </objective>-->
+<!--        <objective>
+            <title>Euler's method for approximating IVP solutions</title>
+            <slug>O4</slug>
+        </objective> -->
     </objectives>
 </bank>
