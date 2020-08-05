@@ -7,7 +7,10 @@ def generator():
     the last has two zeros.
     """
     t = var('t')
-    y,yp = mi_vars("y","y'")
+    y,yp,ypp = mi_vars("y","y'","y''")
+    first_order = choice([True,False])
+    if first_order:
+        ypp=yp
     zeros = [
         randrange(-6,-3),
         randrange(-2,3),
@@ -28,6 +31,7 @@ def generator():
             (t-zeros[1])*(t-zeros[2]),
         ]),
     ]
+    constant = randrange(1,6)*choice([-1,1])
     roll = randrange(3)
     if roll == 0:
         # p has no zeroes, thm says all real numbers
@@ -63,7 +67,7 @@ def generator():
         t0 = randrange(z1+1,z2)
         x0 = choice([z1-randrange(1,5),z2+randrange(1,5)])
         interval = f"({z1},{z2})"
-    ode = shuffled_equation(p*yp,q*y,r)
+    ode = shuffled_equation(p*ypp,q*y,r,constant*yp)
 
     return {
         "ode": ode,

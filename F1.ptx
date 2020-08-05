@@ -3,11 +3,11 @@
       <p>
 Use a tool like <url href="https://sagecell.sagemath.org/"/> and the SageMath code
 <c>t,y = var('t y'); plot_slope_field(<xsl:value-of select="field_sage"/>, (t,-5,5), (y,-5,5))</c>
-to produce the slope field for the ODE <m><xsl:value-of select="ode"/></m>.
+to produce the direction field for the ODE <m><xsl:value-of select="ode"/></m>.
       </p>
       <p>
 Let <m>y_p</m> be the solution to the following IVP.
-Explain how to use its slope field to approximate the
+Explain how to use its direction field to approximate the
 value of <m>y_p</m> at <m>t=<xsl:value-of select="othert"/></m>.
       </p>
       <me>

@@ -6,39 +6,53 @@
     <slug>clontz-diff-eq</slug>
     <objectives>
         <objective>
+            <!-- 1.1, 1.2 -->
             <title>Homogeneous first-order linear IVP</title>
             <slug>C1</slug>
         </objective>
         <objective>
+            <!-- 4.6, 6.4 -->
             <title>Non-homogeneous first-order linear ODE</title>
             <slug>C2</slug>
         </objective>
         <objective>
+            <!-- 4.2, 4.3 -->
             <title>Homogeneous second-order linear ODE</title>
             <slug>C3</slug>
         </objective>
         <objective>
+            <!-- 4.2, 4.3 -->
             <title>Homogeneous second-order linear IVP</title>
             <slug>C4</slug>
         </objective>
         <objective>
+            <!-- 4.4, 4.5, 6.2, 6.3 -->
             <title>Non-homogeneous second-order linear ODE</title>
             <slug>C5</slug>
         </objective>
         <objective>
+            <!-- 7.6, 7.7, 7.9 -->
             <title>Discontinuous functions and distributions</title>
             <slug>D1</slug>
         </objective>
         <objective>
+            <!-- 7.2, 7.3 -->
             <title>Laplace transforms from formula and definition</title>
             <slug>D2</slug>
         </objective>
         <objective>
-            <title>Using Laplace transforms to solve IVPs</title>
+            <!-- 7.4, 7.8 -->
+            <title>Inverse Laplace transforms</title>
             <slug>D3</slug>
         </objective>
         <objective>
-            <title>Slope fields for first-order ODEs</title>
+            <!-- 7.5 -->
+            <title>Using Laplace transforms to solve IVPs</title>
+            <slug>D4</slug>
+        </objective>
+        <objective>
+            <!-- 1.3 -->
+            <title>Direction fields for first-order ODEs</title>
             <slug>F1</slug>
         </objective>
         <objective>
@@ -46,32 +60,46 @@
             <slug>F2</slug>
         </objective>
         <objective>
+            <!-- 2.2 -->
             <title>Separation of variables</title>
             <slug>F3</slug>
         </objective>
         <objective>
-            <title>Separation of variables with variation of parameters</title>
+            <!-- 2.3, 4.6 -->
+            <title>Techniques for linear IVPs</title>
             <slug>F4</slug>
         </objective>
         <objective>
+            <!-- 2.4 -->
             <title>Implicit solutions for exact IVPs</title>
             <slug>F5</slug>
         </objective>
         <objective>
+            <!-- 2.6 -->
+            <title>Substitution strategies</title>
+            <slug>F6</slug>
+        </objective>
+<!--        <objective>
             <title>Phase Planes</title>
-            <slug>S1</slug>
+            <slug>O1</slug>
+        </objective>-->
+        <objective>
+            <!-- 5.2, 7.10 -->
+            <title>Linear ODE systems</title>
+            <slug>X1</slug>
         </objective>
         <objective>
-            <title>Linear ODE system with elimination</title>
-            <slug>S2</slug>
-        </objective>
-        <objective>
+            <!-- 6.1 -->
             <title>Existence/uniqueness theorem for linear IVPs</title>
-            <slug>N1</slug>
+            <slug>X2</slug>
         </objective>
-        <objective>
+<!--        <objective>
             <title>Euler's method for approximating IVP solutions</title>
-            <slug>N2</slug>
-        </objective>
+            <slug>O4</slug>
+        </objective> -->
+        <!-- Modeling/Applications: -->
+        <!-- 2.1, 3.1-3.5, 4.1, 5.1, 7.1 -->
+        <!-- population models, heating and cooling of objects and buildings, acceleration-velocity models, motion in a resisting medium, mixing problems, modeling electric circuits -->
+        <!-- Spring-Mass oscillators, Equations of Motion -->
     </objectives>
 </bank>
