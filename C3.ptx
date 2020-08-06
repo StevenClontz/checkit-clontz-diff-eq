@@ -2,11 +2,15 @@
   <statement>
     <p>Explain how to find the general solution to each given ODE using
         exponential functions.</p>
-    <p>For each solution using complex numbers, also provide a general solution
-        using only real numbers.</p>
+    <p>For each exponential solution using complex numbers, also provide
+        an alternate general solution using only real numbers.</p>
+      <ol>
     <xsl:for-each select="odes/*">
+        <li>
       <me><xsl:value-of select="."/></me>
+        </li>
     </xsl:for-each>
+      </ol>
   </statement>
   <answer>
     <me><xsl:value-of select="complex_sol"/></me>

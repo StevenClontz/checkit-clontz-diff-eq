@@ -1,12 +1,12 @@
 <exercise>
   <statement>
       <p>
-Compute the Laplace transform of
-<m>y = <xsl:value-of select="pretransform"/></m>by using a transform table.
+Compute the Laplace transform <m>\mathcal{L}\{y\}</m> of
+<m>y = <xsl:value-of select="pretransform"/></m> by using a transform table.
       </p>
       <p>
-Then use the integral definition of the Laplace transform
-to obtain the same result.
+Then show how the integral definition of the Laplace transform
+to obtains same result.
       </p>
   </statement>
   <answer>

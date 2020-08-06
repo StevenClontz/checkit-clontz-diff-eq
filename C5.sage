@@ -10,7 +10,7 @@ def generator():
     # pick particular solution
     c=a
     while c in [a,b]:
-        c = randrange(2,4)
+        c = choice([2,3,5])
     d = randrange(1,4)*choice([-1,1])
     ypart = choice([
         d*t*exp(c*t),
@@ -23,6 +23,6 @@ def generator():
     ode_sol = (y==k1*exp(a*t)+k2*exp(b*t)+ypart)
 
     return {
-        "ode": latex(ode),
-        "ode_sol": latex(ode_sol)
+        "ode": ode,
+        "ode_sol": ode_sol,
     }

@@ -1,24 +1,17 @@
 <exercise>
   <statement>
       <p>
-          Explain how to solve the following IVP.
+          Explain how to use convolution along with the formula
+          <m>\mathcal{L}\{e^{at})=\frac{1}{s-a}</m>to find the following
+          inverse Laplace transform:
       </p>
       <me>
-          <xsl:value-of select="ode"/>\hspace{2em}
-          y(0)=<xsl:value-of select="y0"/>,
-          y'(0)=<xsl:value-of select="yp0"/>
+          \mathcal{L}^{-1}\left\{<xsl:value-of select="transform"/>\right\}
       </me>
-      <p>Hint: <m><xsl:value-of select="partial_fractions"/></m>.</p>
   </statement>
   <answer>
       <me>
-          \mathcal{L}\{y\}=<xsl:value-of select="ly"/>
-      </me>
-      <me>
-          \mathcal{L}\{y\}=<xsl:value-of select="ly_simp"/>
-      </me>
-      <me>
-          <xsl:value-of select="sol"/>
+          <xsl:value-of select="pretransform"/>
       </me>
   </answer>
 </exercise>

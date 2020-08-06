@@ -6,11 +6,14 @@ def generator():
     one function has a unique zero,
     the last has two zeros.
     """
-    t = var('t')
-    y,yp,ypp = mi_vars("y","y'","y''")
-    first_order = choice([True,False])
-    if first_order:
-        ypp=yp
+    t,y = var('t y')
+    order = choice([2,3])
+    if choice([True,False]):
+        yp = var("yp", latex_name="y'")
+        ypp = var("ypp", latex_name="y''")
+    else:
+        yp = var("yp", latex_name="y''")
+        ypp = var("ypp", latex_name="y'''")
     zeros = [
         randrange(-6,-3),
         randrange(-2,3),
@@ -32,8 +35,8 @@ def generator():
         ]),
     ]
     constant = randrange(1,6)*choice([-1,1])
-    roll = randrange(3)
-    if roll == 0:
+    roll = randrange(1,3)
+    if roll == 0: #dummied out
         # p has no zeroes, thm says all real numbers
         p = pqr[0]
         others = [pqr[1],pqr[2]]

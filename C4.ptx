@@ -1,13 +1,17 @@
 <exercise>
   <statement>
     <p>Explain how to find the particular solution to each given IVP.</p>
+      <ol>
     <xsl:for-each select="ivps/*">
+        <li>
         <me>
           <xsl:value-of select="ode"/>\hspace{2em}
           <xsl:value-of select="var"/>(0)=<xsl:value-of select="iv1"/>,
           <xsl:value-of select="var"/>'(0)=<xsl:value-of select="iv2"/>
         </me>
+        </li>
     </xsl:for-each>
+      </ol>
   </statement>
   <answer>
     <xsl:for-each select="ivps/*">

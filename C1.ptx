@@ -1,14 +1,14 @@
 <exercise>
   <statement>
     <p>
-Explain how to find the particular solution to the given IVP,
-and label the general solution to the ODE.
+Explain how to find the general solution to the given ODE,
+and the particular solution to the given IVP.
     </p>
     <me>
       <xsl:value-of select="ode"/>,\hspace{1em}
       y\big(<xsl:value-of select="t0"/>\big)=<xsl:value-of select="y0"/>
     </me>
-    <p>Then explain how to verify that your particular solution is correct.</p>
+    <p>Then show how to verify that your particular solution is correct.</p>
   </statement>
   <answer>
     <me><xsl:value-of select="ode_sol"/></me>

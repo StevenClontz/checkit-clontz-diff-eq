@@ -1,15 +1,32 @@
 <exercise>
   <statement>
     <p>
-      Find the largest interval for which the Existence and Uniqueness
-      Theorem for Linear IVPs guarantees a unique solution for the following IVP.
+      Explain what the Existence and Uniqueness Theorem for First Order IVPs
+      guarantees about the existence and uniqueness of solutions for the following
+      IVP.
     </p>
     <me>
-      <xsl:value-of select="ode"/>\hspace{2em}
-      x(<xsl:value-of select="t0"/>)=<xsl:value-of select="x0"/>
+      y'=<xsl:value-of select="F"/>\hspace{2em}
+      x(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/>
     </me>
   </statement>
   <answer>
-    <me><xsl:value-of select="interval"/></me>
+    <p><m>F(t,y)=<xsl:value-of select="F"/></m> is continuous at and nearby the
+      initial value so a solution exists for a nearby interval.
+      </p>
+    <xsl:choose>
+        <xsl:when test="unique">
+          <p><m>F_y=<xsl:value-of select="Fy"/></m> is continous
+              at and nearby the initial value so the solution is unique for
+              a nearby interval.
+            </p>
+        </xsl:when>
+        <xsl:otherwise>
+          <p><m>F_y=<xsl:value-of select="Fy"/></m> is not continous
+              (or even defined)
+              at the initial value so the guaranteed solution may not be unique.
+            </p>
+        </xsl:otherwise>
+      </xsl:choose>
   </answer>
 </exercise>

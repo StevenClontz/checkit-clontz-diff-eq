@@ -1,23 +1,22 @@
 <exercise>
   <statement>
     <p>
-      Determine which of the following ODEs is exact.
+      Apply each of the substitutions <m>u=\frac{y}{t}</m> and
+      <m>u=at+by+c</m> to one of the following
+      ODEs, and show that each result is separable.
+      (Do not fully solve either ODE.)
     </p>
+    <ol>
     <xsl:for-each select="odes/*">
-      <me><xsl:value-of select="."/></me>
+      <li><m><xsl:value-of select="ode"/></m></li>
     </xsl:for-each>
-    <p>
-      Then find an implicit solution for this exact ODE
-      satisfying the initial value
-      <m>y(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/></m>.
-    </p>
+    </ol>
   </statement>
   <answer>
-    <p>The following ODE is exact.</p>
-    <me><xsl:value-of select="exact_ode"/></me>
-    <p>
-      Its implicit solution satisfying the initial value is:
-    </p>
-    <me><xsl:value-of select="solution"/></me>
+    <ol>
+    <xsl:for-each select="odes/*">
+      <li><m><xsl:value-of select="ode_simp"/></m></li>
+    </xsl:for-each>
+    </ol>
   </answer>
 </exercise>

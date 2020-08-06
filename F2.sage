@@ -1,84 +1,47 @@
 def generator():
-    x,xp = mi_vars("x", "x'")
+    t = var("t")
+    y,yp,ypp = mi_vars("y","y'","y''")
 
-    # pick a,b for x'=k*t^p(t-a)(t-b)
-    k = choice([-1,1])*randrange(2,4)
-    p = randrange(4)
-    a = randrange(-6,-1)
-    b = randrange(2,6)
-    f = k*x^p*(x-a)*(x-b)
-    ode = (xp == f.expand())
-
-    version = choice(["zero","even","odd"])
-    if version == "zero":
-        p = 0
-    elif version == "even":
-        p = choice([2,4])
+    roll = randrange(3)
+    if roll==0:
+        # pick n for y=kx^n
+        n = randrange(2,4)*choice([-1,1])
+        # pick initial value
+        t0 = randrange(1,5)*choice([-1,1])
+        # pick coefficient
+        k = randrange(1,5)*choice([-1,1])
+        ode = shuffled_equation(t*yp,-n*y)*choice([2,3])
+        ivp_sol = (y == k*t^n)
+        y0 = k*t0^n
+    elif roll==1:
+        # pick p(t) for y=e^p(t)
+        p = choice([
+          randrange(1,4)*choice([-1,1])*
+            t^2+randrange(-3,4)*t+randrange(-5,6),
+          randrange(1,4)*choice([-1,1])*cos(t),
+          randrange(1,4)*choice([-1,1])*sin(t)
+        ])
+        # pick coefficient
+        k = randrange(1,5)*choice([-1,1])
+        ode = shuffled_equation(yp,-p.diff()*y)*choice([2,3])
+        ivp_sol = (y==k*exp(p))
+        t0=0
+        y0 = k*exp(p(t=t0))
     else:
-        p = choice([1,3])
-
-    t0 = (a + 0.5 + random()*(-a-1)).n(digits=2)
-    x0 = (0.5 + random()*(b-1)).n(digits=2)
-    if choice([True,False]):
-        t0,x0 = x0,t0
-
-    if (version == "zero") and (k<0):
-        a_label = "source/unstable"
-        z_label = "NA"
-        b_label = "sink/stable"
-        math_lim = b
-        real_lim = b
-    elif (version == "zero") and (k>0):
-        a_label = "sink/stable"
-        z_label = "NA"
-        b_label = "source/unstable"
-        math_lim = a
-        real_lim = a
-    elif (version == "even") and (k<0):
-        a_label = "source/unstable"
-        z_label = "neither/unstable"
-        b_label = "sink/stable"
-        if x0 < 0:
-            math_lim = 0
-        else:
-            math_lim = b
-        real_lim = b
-    elif (version == "even") and (k>0):
-        a_label = "sink/stable"
-        z_label = "neither/unstable"
-        b_label = "source/unstable"
-        if x0 < 0:
-            math_lim = a
-        else:
-            math_lim = 0
-        real_lim = a
-    elif (version == "odd") and (k<0):
-        a_label = "sink/stable"
-        z_label = "source/unstable"
-        b_label = "sink/stable"
-        if x0 < 0:
-            math_lim = a
-            real_lim = a
-        else:
-            math_lim = b
-            real_lim = b
-    else:
-        a_label = "source/unstable"
-        z_label = "sink/stable"
-        b_label = "source/unstable"
-        math_lim = 0
-        real_lim = 0
-
+        # solves to y^n=(t poly)
+        y0 = randrange(2,5)
+        n = randrange(2,4)
+        t0 = randrange(2,4)*choice([-1,1])
+        first_coeff = randrange(1,4)
+        second_coeff = randrange(1,4)
+        constant = y0^n-first_coeff*t0^2-second_coeff*t0
+        ode = shuffled_equation(-yp,2*first_coeff*t/y^n,second_coeff/y^n)*randrange(2,4)*y^randrange(1,n)
+        ode = ode.expand()
+        ivp_sol = (y==(first_coeff*t^2+second_coeff*t+constant)^(1/n))
 
     return {
-      "ode": ode,
-      "t0": t0,
-      "x0": x0,
-      "a": a,
-      "b": b,
-      "a_label": a_label,
-      "b_label": b_label,
-      "z_label": z_label,
-      "math_lim": math_lim,
-      "real_lim": real_lim,
+        "ode": ode,
+        "t0": t0,
+        "y0": y0,
+        "ivp_sol": ivp_sol,
     }

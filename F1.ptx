@@ -1,9 +1,9 @@
 <exercise>
   <statement>
       <p>
-Use a tool like <url href="https://sagecell.sagemath.org/"/> and the SageMath code
+Use <url href="https://sagecell.sagemath.org/"/> to run the SageMath code
 <c>t,y = var('t y'); plot_slope_field(<xsl:value-of select="field_sage"/>, (t,-5,5), (y,-5,5))</c>
-to produce the direction field for the ODE <m><xsl:value-of select="ode"/></m>.
+producing the direction field for the ODE <m><xsl:value-of select="ode"/></m>.
       </p>
       <p>
 Let <m>y_p</m> be the solution to the following IVP.
