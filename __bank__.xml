@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank>
-    <title>Differential Equations</title>
+    <title>Differential Equations (Clontz)</title>
     <author>Steven Clontz</author>
     <url>https://clontz.org</url>
     <slug>clontz-diff-eq</slug>
