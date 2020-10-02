@@ -35,7 +35,7 @@ def generator():
         first_coeff = randrange(1,4)
         second_coeff = randrange(1,4)
         constant = y0^n-first_coeff*t0^2-second_coeff*t0
-        ode = shuffled_equation(-yp,2*first_coeff*t/y^n,second_coeff/y^n)*randrange(2,4)*y^randrange(1,n)
+        ode = shuffled_equation(-n*yp*y^(n-1),2*first_coeff*t,second_coeff)*randrange(2,4)/y^randrange(1,n)
         ode = ode.expand()
         ivp_sol = (y==(first_coeff*t^2+second_coeff*t+constant)^(1/n))
 
