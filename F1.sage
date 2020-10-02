@@ -7,7 +7,7 @@ def generator():
         ("sin(t+y)",yp==sin(t+y)),
         ("cos(t+y)",yp==cos(t+y)),
         ("y/15-t/3",yp==y/15-t/3),
-        ("t/3-y/15",yp==-t/3-y/15),
+        ("t/3-y/15",yp==t/3-y/15),
         ("sin(y/2)",yp==sin(y/2)),
         ("cos(y/2)",yp==cos(y/2)),
         ("t*y/9-t/3",yp==t*y/9-t/3),
