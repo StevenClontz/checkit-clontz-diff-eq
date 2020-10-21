@@ -1,22 +1,36 @@
 <exercise>
   <statement>
     <p>
-      Apply each of the substitutions <m>u=\frac{y}{t}</m> and
-      <m>u=at+by+c</m> to one of the following
-      ODEs, and show that each result is separable.
+      Use a substitution (either <m>u=\frac{y}{t}</m> or <m>u=at+by</m>)
+      to rewrite each of the following ODEs as the separable ODE
+      <m><xsl:value-of select="separated"/></m>.
       (Do not fully solve either ODE.)
     </p>
     <ol>
-    <xsl:for-each select="odes/*">
-      <li><m><xsl:value-of select="ode"/></m></li>
-    </xsl:for-each>
+        <xsl:choose>
+    <xsl:when test="swapped">
+      <li><m><xsl:value-of select="y_over_t"/></m></li>
+      <li><m><xsl:value-of select="at_y"/></m></li>
+    </xsl:when>
+    <xsl:otherwise>
+      <li><m><xsl:value-of select="at_y"/></m></li>
+      <li><m><xsl:value-of select="y_over_t"/></m></li>
+    </xsl:otherwise>
+        </xsl:choose>
     </ol>
   </statement>
   <answer>
     <ol>
-    <xsl:for-each select="odes/*">
-      <li><m><xsl:value-of select="ode_simp"/></m></li>
-    </xsl:for-each>
+        <xsl:choose>
+    <xsl:when test="swapped">
+      <li>Let <m>u=\frac{y}{t}</m></li>
+      <li>Let <m><xsl:value-of select="at_y_sub"/></m></li>
+    </xsl:when>
+    <xsl:otherwise>
+      <li>Let <m><xsl:value-of select="at_y_sub"/></m></li>
+      <li>Let <m>u=\frac{y}{t}</m></li>
+    </xsl:otherwise>
+        </xsl:choose>
     </ol>
   </answer>
 </exercise>
