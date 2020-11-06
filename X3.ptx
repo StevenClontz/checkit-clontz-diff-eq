@@ -7,7 +7,7 @@
     </p>
     <me>
       y'=<xsl:value-of select="F"/>\hspace{2em}
-      x(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/>
+      y(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/>
     </me>
   </statement>
   <answer>

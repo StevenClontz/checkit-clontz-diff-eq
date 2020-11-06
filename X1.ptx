@@ -2,7 +2,7 @@
   <statement>
     <p>Find the solution to the given system of IVPs.</p>
       <me><xsl:value-of select="x_ode"/>\hspace{2em}x(0)=<xsl:value-of select="x0"/></me>
-      <me><xsl:value-of select="y_ode"/>\hspace{2em}x(0)=<xsl:value-of select="y0"/></me>
+      <me><xsl:value-of select="y_ode"/>\hspace{2em}y(0)=<xsl:value-of select="y0"/></me>
   </statement>
   <answer>
       <me>x=<xsl:value-of select="x_sol"/></me>

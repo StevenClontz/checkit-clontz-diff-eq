@@ -43,7 +43,7 @@ def generator():
         shuffle(others)
         q,r=others
         t0 = randrange(-6,7)
-        x0 = randrange(-6,7)
+        y0 = randrange(-6,7)
         interval = "(-\\infty,+\\infty)"
     elif roll == 1:
         # p has one zero, zeros[0], randomly choose left or right
@@ -53,11 +53,11 @@ def generator():
         q,r=others
         if choice([True,False]):
             t0 = zeros[0] - randrange(1,5)
-            x0 = zeros[0] + randrange(1,5)
+            y0 = zeros[0] + randrange(1,5)
             interval = f"(-\\infty,{zeros[0]})"
         else:
             t0 = zeros[0] + randrange(1,5)
-            x0 = zeros[0] - randrange(1,5)
+            y0 = zeros[0] - randrange(1,5)
             interval = f"({zeros[0]},+\\infty)"
     else:
         # p has two zeros, zeros[1] and zeros[2], choose random between them
@@ -68,7 +68,7 @@ def generator():
         z1 = min([zeros[1],zeros[2]])
         z2 = max([zeros[1],zeros[2]])
         t0 = randrange(z1+1,z2)
-        x0 = choice([z1-randrange(1,5),z2+randrange(1,5)])
+        y0 = choice([z1-randrange(1,5),z2+randrange(1,5)])
         interval = f"({z1},{z2})"
     ode = shuffled_equation(p*ypp,q*y,r,constant*yp)
 
@@ -76,5 +76,5 @@ def generator():
         "ode": ode,
         "interval": interval,
         "t0": t0,
-        "x0": x0,
+        "y0": y0,
     }
