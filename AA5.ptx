@@ -1,0 +1,26 @@
+<exercise>
+    <statement>
+        <p>
+For each ODE, describe an appropriate strategy to find its
+general solution, and the features of the ODE that make
+that strategy appropriate. (Do not fully solve these ODEs.)
+        </p>
+        <ol>
+            <xsl:for-each select="odes/*">
+                <li>
+                    <m><xsl:value-of select="ode"/></m>
+                </li>
+            </xsl:for-each>
+        </ol>
+  </statement>
+  <answer>
+        <ol>
+            <xsl:for-each select="odes/*">
+                <li>
+The ODE is <xsl:value-of select="form"/>, so it can be solved
+by <xsl:value-of select="strategy"/>.
+                </li>
+            </xsl:for-each>
+        </ol>
+  </answer>
+</exercise>

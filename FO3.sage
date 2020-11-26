@@ -1,48 +1,25 @@
 def generator():
-    t,y = var("t y")
+    t,y,u = var("t y u")
     yp = var("yp", latex_name="y'")
-
-    terms = [
-        randrange(1,6)*choice([-1,1])*t^randrange(2,5),
-        randrange(1,6)*choice([-1,1])*y^randrange(2,5),
-        randrange(1,6)*choice([-1,1])*t*y,
-        randrange(1,6)*choice([-1,1])*t*y^2,
-        randrange(1,6)*choice([-1,1])*t^2*y,
-        randrange(1,6)*choice([-1,1])*t^2*y^2
-    ]
-    shuffle(terms)
-    f = sum(terms[:3])
-    # pick initial values
-    ivs = [-1,1]
-    shuffle(ivs)
-    t0,y0=ivs
-    f0 = f(t=t0,y=y0)
-    exact_ode =    shuffled_equation(
-        terms[0].diff(t),
-        terms[1].diff(t),
-        terms[2].diff(t),
-        terms[0].diff(y)*yp,
-        terms[1].diff(y)*yp,
-        terms[2].diff(y)*yp,
-    )
-    nonexact_ode = shuffled_equation(
-        terms[0].diff(t),
-        terms[2].diff(t),
-        terms[4].diff(t),
-        terms[1].diff(y)*yp,
-        terms[3].diff(y)*yp,
-        terms[5].diff(y)*yp,
-    )
+    up = var("up", latex_name="u'")
+    cons = list(srange(3,9))
+    shuffle(cons)
+    m,n,p,q,a,b=cons
+    linear = (up+m*t^p*u==n*t^q)
     odes = [
-        exact_ode,
-        nonexact_ode,
+        {
+            "ode": shuffled_equation(yp*t,-y,m*t^(p+1)*y,-n*t^(q+2)),
+            "sub": (u==y/t)
+        },
+        {
+            "ode": shuffled_equation(a,b*yp,a*m*t^(p+1),b*m*y*t^p,-n*t^q),
+            "sub": (u==a*t+b*y)
+        },
+        {
+            "ode": shuffled_equation((1-a)*yp,m*t^p*y,-n*t^q*y^a),
+            "sub": (u==y^(1-a))
+        },
     ]
     shuffle(odes)
 
-    return {
-        "odes": odes,
-        "exact_ode": exact_ode,
-        "t0": t0,
-        "y0": y0,
-        "solution": (f==f0),
-    }
+    return {"odes":odes, "linear":linear}

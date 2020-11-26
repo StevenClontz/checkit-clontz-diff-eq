@@ -86,13 +86,13 @@
             <slug>FO2</slug>
         </objective>
         <objective>
-            <!-- 2.4 -->
-            <title>Exact First-Order IVPs</title>
+            <!-- 2.6 -->
+            <title>Substitution for First-Order IVPs</title>
             <slug>FO3</slug>
         </objective>
         <objective>
-            <!-- 2.6 -->
-            <title>Substitution for First-Order IVPs</title>
+            <!-- 2.4 -->
+            <title>Exact First-Order IVPs</title>
             <slug>FO4</slug>
         </objective>
         <objective>

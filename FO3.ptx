@@ -1,23 +1,30 @@
 <exercise>
   <statement>
     <p>
-        Explain why one of the following ODEs is exact, and why the other is not.
+      Use an appropriate substitution
+      to show that all of the following ODEs may be transformed into
+      the same linear ODE.
+      (Do not fully solve these ODEs.)
     </p>
-    <xsl:for-each select="odes/*">
-      <me><xsl:value-of select="."/></me>
-    </xsl:for-each>
-    <p>
-      Then find an implicit solution for the exact ODE
-      that satisfies the initial value
-      <m>y(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/></m>.
-    </p>
+    <ol>
+        <xsl:for-each select="odes/*">
+            <li>
+                <m><xsl:value-of select="ode"/></m>
+            </li>
+        </xsl:for-each>
+    </ol>
   </statement>
   <answer>
-    <p>The following ODE is exact.</p>
-    <me><xsl:value-of select="exact_ode"/></me>
-    <p>
-      Its implicit solution satisfying the initial value is:
-    </p>
-    <me><xsl:value-of select="solution"/></me>
+    <ol>
+        <xsl:for-each select="odes/*">
+            <li>
+                Let <m><xsl:value-of select="sub"/></m>.
+            </li>
+        </xsl:for-each>
+    </ol>
+      <p>
+          All ODEs transform into
+      <m><xsl:value-of select="linear"/></m>.
+      </p>
   </answer>
 </exercise>
