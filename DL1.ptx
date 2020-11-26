@@ -1,28 +1,32 @@
 <exercise>
   <statement>
       <p>
-      Illustrustrate both of the following integrals. Then explain how
+      Illustrate each of the following integrals. Then explain how
         to compute each.
       </p>
+      <ol>
+      <xsl:for-each select="integrals/*">
+          <li>
       <me>
           \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
-          <xsl:value-of select="d_integrand"/>
-          \,dt
-          \hspace{2em}
-          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
-          <xsl:value-of select="u_integrand"/>
+          <xsl:value-of select="integrand"/>
           \,dt
       </me>
+          </li>
+      </xsl:for-each>
+      </ol>
   </statement>
   <answer>
+      <ol>
+      <xsl:for-each select="integrals/*">
+          <li>
       <me>
           \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
-          <xsl:value-of select="d_integrand"/>
-          \,dt = <xsl:value-of select="d_int_value"/>
-          \hspace{2em}
-          \int_{<xsl:value-of select="b"/>}^{<xsl:value-of select="c"/>}
-          <xsl:value-of select="u_integrand"/>
-          \,dt = <xsl:value-of select="u_int_value"/>
+          <xsl:value-of select="integrand"/>
+          \,dt = <xsl:value-of select="value"/>
       </me>
+          </li>
+      </xsl:for-each>
+      </ol>
   </answer>
 </exercise>

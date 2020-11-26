@@ -1,25 +1,34 @@
 def generator():
-    """
-    Produces a dirac-delta y=k*d(t-a)
-    and step y=k*u(t-a).
-    Asks for integrals for each around a.
-    """
     t = var("t")
     y = var("y")
-    a = randrange(3,7)
-    b = a - randrange(1,4)
-    c = a + randrange(2,5)
     d = dirac_delta
     u = unit_step
-    k = randrange(2,6)
-    d_integrand = (k*d(t-a))
-    u_integrand = (k*u(t-a))
+    avals = [choice([1,2])]
+    f = e^(randrange(2,6)*t)*randrange(2,4)
+    for _ in range(6):
+        avals.append(avals[-1]+choice([1,1,2]))
+    def d_nont():
+        b = avals[0]
+        a = avals[2]
+        c = avals[4]
+        integrand = f.diff()*d(t-a)
+        value = f.diff(t)(t=a)
+        return {"b":b,"c":c,"integrand":integrand,"value":value}
+    def u_int():
+        b = avals[1]
+        a = avals[2]
+        c = avals[5]
+        integrand = f.diff()*u(t-a)
+        value = f(t=c)-f(t=a)
+        return {"b":b,"c":c,"integrand":integrand,"value":value}
+    def d_t():
+        b = avals[3]
+        a = avals[2]
+        c = avals[6]
+        integrand = f.diff()*d(t-a)
+        value = 0
+        return {"b":b,"c":c,"integrand":integrand,"value":value}
+    ints = [d_nont(),u_int(),d_t()]
+    shuffle(ints)
 
-    return {
-        "d_integrand": d_integrand,
-        "u_integrand": u_integrand,
-        "b": b,
-        "c": c,
-        "d_int_value": k,
-        "u_int_value": k*(c-a),
-    }
+    return {"integrals":ints}

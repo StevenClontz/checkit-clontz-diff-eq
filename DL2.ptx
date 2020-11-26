@@ -1,17 +1,28 @@
 <exercise>
   <statement>
-      <p>
-Compute the Laplace transform <m>\mathcal{L}\{y\}</m> of
+      <ol>
+      <li>
+Compute the Laplace transform of
 <m>y = <xsl:value-of select="pretransform"/></m> by using a transform table.
-      </p>
-      <p>
-Then show how the integral definition of the Laplace transform
-to obtains same result.
-      </p>
+      </li>
+          <li>
+Show why <m>\mathcal{L}\{<xsl:value-of select="e_pretransform"/>\}=<xsl:value-of select="e_transform"/></m>
+using the integral definition of a Laplace transform.
+          </li>
+      </ol>
   </statement>
   <answer>
+      <ol>
+          <li>
       <me>
 \mathcal{L}\{y\} = <xsl:value-of select="transform"/>
       </me>
+          </li>
+          <li>
+              <me>
+\mathcal{L}\{<xsl:value-of select="e_pretransform"/>\}=\int_0^{\infty}<xsl:value-of select="e_pretransform"/>e^{-st}\,dt
+              </me>
+          </li>
+      </ol>
   </answer>
 </exercise>
