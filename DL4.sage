@@ -1,6 +1,7 @@
 def generator():
     t = var("t")
     s = var("s")
+    x = var("x")
     y,yp,ypp = mi_vars("y","y'","y''")
     d = dirac_delta
     u = unit_step
@@ -25,7 +26,7 @@ def generator():
         ode = shuffled_equation(ypp,b^2*y,-k*u(t-a))*randrange(2,4)
         ly = (y_0*s+yp_0)/(s^2+b^2)+k*exp(-a*s)/(s*(s^2+b^2))
         ly_simp = y_0*s/(s^2+b^2)+yp_0/(s^2+b^2)+m*exp(-a*s)/s-m*s*exp(-a*s)/(s^2+b^2)
-        partial_fractions = (1/(s^3+s*b^2)==(m/k)/s-(m*s/k)/(s^2+b^2))
+        partial_fractions = (1/(x^3+x*b^2)==(m/k)/x-(m*x/k)/(x^2+b^2))
         sol = (y==y_0*cos(b*t)+n*sin(b*t)+m*u(t-a)-m*cos(b*(t-a))*u(t-a))
 
         return {
@@ -57,7 +58,7 @@ def generator():
         ode = shuffled_equation(ypp,b*yp+c*y,-k*d(t-a))*randrange(2,4)
         ly = (y_0*s+yp_0)/(s^2+b*s+c)+k*exp(-a*s)/(s^2+b*s+c)
         ly_simp = beta/(s-m)-beta/(s-n)+exp(-a*s)*alpha/(s-m)-exp(-a*s)*alpha/(s-n)
-        partial_fractions = (1/(s^2+b*s+c)==(alpha/k)/(s-m)-(alpha/k)/(s-n))
+        partial_fractions = (1/(x^2+b*x+c)==(alpha/k)/(x-m)-(alpha/k)/(x-n))
         sol = (y==beta*exp(m*t)-beta*exp(n*t)+alpha*exp(m*(t-a))*u(t-a)\
             -alpha*exp(n*(t-a))*u(t-a))
 
