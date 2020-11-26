@@ -7,14 +7,21 @@
       <ol>
     <xsl:for-each select="odes/*">
         <li>
-      <me><xsl:value-of select="."/></me>
+      <me><xsl:value-of select="ode"/></me>
         </li>
     </xsl:for-each>
       </ol>
   </statement>
   <answer>
-    <me><xsl:value-of select="complex_sol"/></me>
-    <me><xsl:value-of select="xode_sol"/></me>
-    <me><xsl:value-of select="yode_sol"/></me>
+      <ol>
+    <xsl:for-each select="odes/*">
+        <li><me>
+            <xsl:if test="complex">
+      <xsl:value-of select="complex"/>\hspace{2em}
+            </xsl:if>
+      <xsl:value-of select="sol"/>
+         </me></li>
+    </xsl:for-each>
+      </ol>
   </answer>
 </exercise>

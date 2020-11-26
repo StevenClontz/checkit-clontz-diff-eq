@@ -1,9 +1,0 @@
-<exercise>
-  <statement>
-    <p>Explain how to find the general solution to the given ODE.</p>
-    <me><xsl:value-of select="ode"/></me>
-  </statement>
-  <answer>
-    <me><xsl:value-of select="ode_sol"/></me>
-  </answer>
-</exercise>

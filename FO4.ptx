@@ -2,8 +2,8 @@
   <statement>
     <p>
       Use a substitution (either <m>u=\frac{y}{t}</m> or <m>u=at+by</m>)
-      to rewrite each of the following ODEs as the separable ODE
-      <m><xsl:value-of select="separated"/></m>.
+      to show that both of the following ODEs may be transformed into
+      the same separable ODE.
       (Do not fully solve either ODE.)
     </p>
     <ol>
@@ -32,5 +32,9 @@
     </xsl:otherwise>
         </xsl:choose>
     </ol>
+      <p>
+          Both ODEs transform into
+      <m><xsl:value-of select="separated"/></m>.
+      </p>
   </answer>
 </exercise>

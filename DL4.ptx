@@ -15,9 +15,6 @@
           \mathcal{L}\{y\}=<xsl:value-of select="ly"/>
       </me>
       <me>
-          \mathcal{L}\{y\}=<xsl:value-of select="ly_simp"/>
-      </me>
-      <me>
           <xsl:value-of select="sol"/>
       </me>
   </answer>

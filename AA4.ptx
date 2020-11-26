@@ -1,0 +1,39 @@
+<exercise>
+  <statement>
+      <p>
+          Explain how to use an appropriate Existence and Uniqueness Theorem to determine
+          the largest possible domain guaranteed for a unique solution to each IVP.
+      </p>
+      <ol>
+          <xsl:for-each select="ivps/*">
+              <li>
+                  <m>
+                      <xsl:value-of select="ode"/>\hspace{2em}
+                      <xsl:value-of select="y"/>(<xsl:value-of select="t0"/>)=
+                      <xsl:value-of select="y0"/><xsl:if test="yp0">,
+                      <xsl:value-of select="y"/>'(<xsl:value-of select="t0"/>)=
+                      <xsl:value-of select="yp0"/></xsl:if><xsl:if test="ypp0">,
+                      <xsl:value-of select="y"/>'(<xsl:value-of select="t0"/>)=
+                      <xsl:value-of select="ypp0"/></xsl:if>
+                  </m>
+              </li>
+          </xsl:for-each>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <xsl:for-each select="ivps/*">
+              <li>
+                  <xsl:if test="interval">
+                      By the Linear ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined on the interval <m><xsl:value-of select="interval"/></m>.
+                  </xsl:if>
+                  <xsl:if test="domain">
+                      By the First Order ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined <xsl:value-of select="domain"/>.
+                  </xsl:if>
+              </li>
+          </xsl:for-each>
+      </ol>
+  </answer>
+</exercise>

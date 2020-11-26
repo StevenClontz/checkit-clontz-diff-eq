@@ -1,0 +1,22 @@
+<exercise>
+  <statement>
+    <p>
+      Show how to use Euler's method with two steps to approximate
+      <m>x(<xsl:value-of select="final/t"/>)</m> given the following
+      IVP.
+    </p>
+    <me>
+        x'=<xsl:value-of select="xp"/>\hspace{2em}
+        x(<xsl:value-of select="init/t"/>)=<xsl:value-of select="init/x"/>
+    </me>
+  </statement>
+  <answer>
+    <ul>
+        <xsl:for-each select="vals/*">
+            <li>
+      <m>x(<xsl:value-of select="t"/>)\approx <xsl:value-of select="x"/></m>
+            </li>
+        </xsl:for-each>
+    </ul>
+  </answer>
+</exercise>

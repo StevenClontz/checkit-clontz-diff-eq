@@ -2,7 +2,7 @@
   <statement>
       <p>
           Explain how to use convolution along with the formula
-          <m>\mathcal{L}\{e^{at})=\frac{1}{s-a}</m>to find the following
+          <m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
           inverse Laplace transform:
       </p>
       <me>

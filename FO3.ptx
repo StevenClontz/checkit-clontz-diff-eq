@@ -1,7 +1,7 @@
 <exercise>
   <statement>
     <p>
-      Determine which of the following ODEs is exact.
+        Explain why one of the following ODEs is exact, and the other is not.
     </p>
     <xsl:for-each select="odes/*">
       <me><xsl:value-of select="."/></me>

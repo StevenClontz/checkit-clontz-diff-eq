@@ -1,0 +1,23 @@
+<exercise>
+  <statement>
+      <p>
+Modify the line of SageMath code
+<c>t,y = var('t y'); plot_slope_field(FIXME, (t,-5,5), (y,-5,5))</c>
+and run it at <url href="https://sagecell.sagemath.org/"/> to
+produce the direction field for the ODE <m><xsl:value-of select="ode"/></m>.
+      </p>
+      <p>
+Then explain how to use its direction field to approximate the
+value of <m>y(<xsl:value-of select="othert"/>)</m> given
+the initial value <m>y(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/></m>.
+      </p>
+  </statement>
+  <answer>
+      <p>
+          Replace <c>FIXME</c> with <c><xsl:value-of select="field_sage"/></c> to show
+          the direction field. Then sketch a curve passing through the initial value
+          to show that
+          <m>y(<xsl:value-of select="othert"/>)\approx<xsl:value-of select="othery"/></m>.
+      </p>
+  </answer>
+</exercise>

@@ -8,7 +8,7 @@ def generator():
     # particular solution
     b=a
     while (b==a):
-        b = randrange(1,6)*choice([-1,1])
+        b = randrange(1,6)
     c = choice([-3,-2,2,3])
     part_sol = choice([
         c*exp(b*t),
@@ -16,12 +16,14 @@ def generator():
         c*exp(a*t)*sin(b*t),
         c*exp(a*t)*cos(b*t)
     ])
-    d = choice([-1,1])*randrange(1,5)
+    d = randrange(2,5)
     ode = shuffled_equation(yp,-a*y,-part_sol.diff()+a*part_sol)*d
-    k = var("k")
-    ode_sol = (y==k*exp(a*t)+part_sol)
+    k = randrange(1,6)*choice([-1,1])
+    ivp_sol = (k*exp(a*t)+part_sol)
+    iv = ivp_sol(t=0)
 
     return {
-      "ode": ode,
-      "ode_sol": ode_sol
+        "ode": ode,
+        "iv": iv,
+        "ivp_sol": ivp_sol,
     }

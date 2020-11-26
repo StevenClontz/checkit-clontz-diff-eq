@@ -12,8 +12,9 @@ def generator():
     while c in [a,b]:
         c = choice([2,3,5])
     d = randrange(1,4)*choice([-1,1])
+    d2 = randrange(1,4)*choice([-1,1])
     ypart = choice([
-        d*t*exp(c*t),
+        d*exp(c*t)+d2,
         d*sin(c*t),
         d*cos(c*t),
     ])
