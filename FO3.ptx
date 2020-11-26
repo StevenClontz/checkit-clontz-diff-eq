@@ -1,14 +1,14 @@
 <exercise>
   <statement>
     <p>
-        Explain why one of the following ODEs is exact, and the other is not.
+        Explain why one of the following ODEs is exact, and why the other is not.
     </p>
     <xsl:for-each select="odes/*">
       <me><xsl:value-of select="."/></me>
     </xsl:for-each>
     <p>
-      Then find an implicit solution for this exact ODE
-      satisfying the initial value
+      Then find an implicit solution for the exact ODE
+      that satisfies the initial value
       <m>y(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/></m>.
     </p>
   </statement>

@@ -2,33 +2,24 @@ def generator():
     t,y,u = var("t y u")
     yp = var("yp", latex_name="y'")
     up = var("up", latex_name="u'")
-    a = randrange(1,6)*choice([-1,1])
-    b = randrange(1,6)*choice([-1,1])
-    f = randrange(2,4)*choice([-1,1])*choice([
-        sin(t),
-        cos(t),
-    ])
-    y_over_t = shuffled_equation(
-        y*yp*t,
-        -y^2,
-        y^2*t*f,
-        a^2*t^3*f
-    )*randrange(2,4)
-    at_y = shuffled_equation(
-        b,
-        yp,
-        b*t*f,
-        y*f,
-        a^2*f/(b*t+y)
-    )*randrange(2,4)
-    at_y_sub = (u==b*t+y)
-    separated = (u/(u^2+a^2)*up==-f)
-    swapped = choice([True,False])
+    cons = list(srange(3,9))
+    shuffle(cons)
+    m,n,p,q,a,b=cons
+    linear = (up+m*t^p*u==n*t^q)
+    odes = [
+        {
+            "ode": shuffled_equation(yp*t,-y,m*t^(p+1)*y,-n*t^(q+2)),
+            "sub": (u==y/t)
+        },
+        {
+            "ode": shuffled_equation(a,b*yp,a*m*t^(p+1),b*m*y*t^p,-n*t^q),
+            "sub": (u==a*t+b*y)
+        },
+        {
+            "ode": shuffled_equation((1-a)*yp,m*t^p*y,-n*t^q*y^a),
+            "sub": (u==y^(1-a))
+        },
+    ]
+    shuffle(odes)
 
-    return {
-        "y_over_t": y_over_t,
-        "at_y": at_y,
-        "at_y_sub": at_y_sub,
-        "separated": separated,
-        "swapped": swapped,
-    }
+    return {"odes":odes, "linear":linear}
