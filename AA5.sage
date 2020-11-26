@@ -5,9 +5,7 @@ def generator():
     def cclinear():
         # pick a,b for (D-a)(D-b)
         a = randrange(1,5)*choice([-1,1])
-        b=a
-        while a==b:
-            b = randrange(2,6)*choice([-1,1])
+        b = randrange(5,9)*choice([-1,1])
         return {
             "ode": shuffled_equation(ypp,(-a-b)*yp,a*b*y),
             "form": "linear homogeneous with constant coefficients",
@@ -22,7 +20,7 @@ def generator():
         kp = randrange(1,6)*choice([-1,1])
         m = n
         while m==n:
-            m = randrange(1,5)*choice([-1,1])
+            m = randrange(1,5)
         part_sol = kp*t^m
         ts = n*part_sol-t*part_sol.diff()
         return {
@@ -43,8 +41,33 @@ def generator():
             "strategy": "using Laplace transforms",
         }
     def exact():
+        terms = [
+            randrange(1,6)*choice([-1,1])*t^randrange(2,5),
+            randrange(1,6)*choice([-1,1])*y^randrange(2,5),
+        ]
+        extra_terms = [
+            randrange(1,6)*choice([-1,1])*t*y,
+            randrange(1,6)*choice([-1,1])*t*y^2,
+            randrange(1,6)*choice([-1,1])*t^2*y,
+            randrange(1,6)*choice([-1,1])*t^2*y^2
+        ]
+        terms.append(choice(extra_terms))
+        # pick initial values
+        ode = shuffled_equation(
+            terms[0].diff(t),
+            terms[1].diff(t),
+            terms[2].diff(t),
+            terms[0].diff(y)*yp,
+            terms[1].diff(y)*yp,
+            terms[2].diff(y)*yp,
+        )
+        return {
+            "ode": ode,
+            "form": "exact",
+            "strategy": "finding a potential function",
+        }
 
-    odes = [cclinear(),folinear(),ccdis()]
+    odes = [cclinear(),folinear(),ccdis(),exact()]
     shuffle(odes)
     return {
         "odes": odes,
