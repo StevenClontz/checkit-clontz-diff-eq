@@ -5,7 +5,7 @@ For each of the following Initial Value Problems (IVPs), designate the following
       </p>
       <ul>
           <li>its Ordinary Differential Equation (ODE)</li>
-          <li>its Initial Value (IV)</li>
+          <li>its Initial Value or Values (IVs)</li>
           <li>the order of the IVP</li>
           <li>its independent variable</li>
           <li>its dependent variable</li>
@@ -39,7 +39,12 @@ Then show how to verify that its solution is valid.
               <li>
                   <ul>
                       <li>ODE: <m><xsl:value-of select="ode"/></m></li>
-                      <li>IV: <m><xsl:value-of select="y"/>(<xsl:value-of select="t0"/>)=<xsl:value-of select="y0"/></m></li>
+                      <li>IV(s): <m>
+                              <xsl:value-of select="y"/>(<xsl:value-of select="t0"/>)=
+                      <xsl:value-of select="y0"/><xsl:if test="yp0">,
+                      <xsl:value-of select="y"/>'(<xsl:value-of select="t0"/>)=
+                      <xsl:value-of select="yp0"/></xsl:if>
+                          </m></li>
                       <li>Order: <xsl:value-of select="order"/></li>
                       <li>Independent variable: <m><xsl:value-of select="t"/></m></li>
                       <li>Dependent variable: <m><xsl:value-of select="y"/></m></li>
