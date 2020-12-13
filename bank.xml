@@ -4,8 +4,8 @@
     <author>Steven Clontz</author>
     <url>https://clontz.org</url>
     <slug>clontz-diff-eq</slug>
-    <objectives>
-        <objective>
+    <outcomes>
+        <outcome>
             <title>Structure of an IVP and Verifying Solutions</title>
             <slug>AA1</slug>
             <description>
@@ -14,8 +14,8 @@ Identify the structure of an initial value problem and its solution.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 1.1 and 1.2
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Direction Fields</title>
             <slug>AA2</slug>
             <description>
@@ -26,8 +26,8 @@ the value of an IVP solution at a point.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 1.3
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Euler's Method</title>
             <slug>AA3</slug>
             <description>
@@ -37,8 +37,8 @@ the value of an IVP solution at a point.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 1.4
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Existence/uniqueness IVP Theorems</title>
             <slug>AA4</slug>
             <description>
@@ -48,8 +48,8 @@ is guaranteed a unique solution.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 1.2 and 6.1
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Constant-Coefficient Linear Homogeneous First-Order IVPs</title>
             <slug>CC1</slug>
             <description>
@@ -58,8 +58,8 @@ Find general and particular solutions for constant-coefficient linear homogeneou
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 4.2
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Constant-Coefficient Linear Non-Homogeneous First-Order IVPs</title>
             <slug>CC2</slug>
             <description>
@@ -68,8 +68,8 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 4.6 and 6.4
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Constant-Coefficient Linear Homogeneous Higher-Order ODEs</title>
             <slug>CC3</slug>
             <description>
@@ -78,8 +78,8 @@ Find general solutions for constant-coefficient linear homogeneous higher-order 
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 4.2 and 4.3
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Constant-Coefficient Linear Homogeneous Second-Order IVPs</title>
             <slug>CC4</slug>
             <description>
@@ -88,8 +88,8 @@ Find particular solutions for constant-coefficient linear homogeneous second-ord
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 4.2 and 4.3
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs</title>
             <slug>CC5</slug>
             <description>
@@ -98,8 +98,8 @@ Find particular solutions for constant-coefficient linear homogeneous second-ord
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 4.4, 4.5, 6.2, and 6.3
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Autonomous Linear First-Order IVP Systems</title>
             <slug>CC6</slug>
             <description>
@@ -108,8 +108,8 @@ Find particular solutions for autonomous linear first-order IVP systems.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 5.2 and 7.10
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Discontinuous Functions and Distributions</title>
             <slug>DL1</slug>
             <description>
@@ -118,8 +118,8 @@ Illustrate and compute integrals involving the unit step function and Dirac-delt
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 7.6 and 7.9
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Laplace Transforms from Definition and Formulas</title>
             <slug>DL2</slug>
             <description>
@@ -129,8 +129,8 @@ its integral definition.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 7.2 and 7.3
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Inverse Laplace Transforms and Convolution</title>
             <slug>DL3</slug>
             <description>
@@ -139,8 +139,8 @@ Compute inverse Laplace transforms using the convolution theorem.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 7.4 and 7.8
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Using Laplace Transforms to Solve IVPs</title>
             <slug>DL4</slug>
             <description>
@@ -150,8 +150,8 @@ applying Laplace transforms.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 7.5
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Linear Homogeneous First-Order IVPs</title>
             <slug>FO1</slug>
             <description>
@@ -160,8 +160,8 @@ Find particular solutions for constant-coefficient linear homogeneous first-orde
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 2.2
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Linear Non-Homogeneous First-Order IVPs</title>
             <slug>FO2</slug>
             <description>
@@ -170,8 +170,8 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 2.3 and 4.6
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Substitution for First-Order IVPs</title>
             <slug>FO3</slug>
             <description>
@@ -180,8 +180,8 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 2.6
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Exact First-Order IVPs</title>
             <slug>FO4</slug>
             <description>
@@ -190,8 +190,8 @@ Identify exact ODEs, and find their implicit solutions.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; 2.4
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Strategies for Solving IVPs</title>
             <slug>AA5</slug>
             <description>
@@ -200,10 +200,10 @@ Identify appropriate techniques for solving IVPs based on their structure.
             <alignment>
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; various sections
             </alignment>
-        </objective>
+        </outcome>
         <!-- Modeling/Applications: -->
         <!-- 2.1, 3.1-3.5, 4.1, 5.1, 7.1 -->
         <!-- population models, heating and cooling of objects and buildings, acceleration-velocity models, motion in a resisting medium, mixing problems, modeling electric circuits -->
         <!-- Spring-Mass oscillators, Equations of Motion -->
-    </objectives>
+    </outcomes>
 </bank>

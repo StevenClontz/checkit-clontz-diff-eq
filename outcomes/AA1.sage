@@ -108,4 +108,4 @@ def generator():
         exp_ivp(*variables[2]),
     ]
     shuffle(ivps)
-    return {"ivps": ivps,"foo":variables}
+    return {"ivps": ivps}
