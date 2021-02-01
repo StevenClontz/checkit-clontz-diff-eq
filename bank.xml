@@ -201,5 +201,14 @@ Identify appropriate techniques for solving IVPs based on their structure.
 Fundamentals of Differential Equations and Boundary Value Problems, 7th ed; various sections
             </alignment>
         </outcome>
+        <outcome>
+            <title>Wronskian</title>
+            <slug>Extra1</slug>
+            <description>
+Use the Wronskian to prove linear independence of particular solutions.
+            </description>
+            <alignment>
+            </alignment>
+        </outcome>
     </outcomes>
 </bank>
