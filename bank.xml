@@ -1,9 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<bank>
-    <title>Differential Equations (Clontz)</title>
-    <author>Steven Clontz</author>
-    <url>https://clontz.org</url>
-    <slug>clontz-diff-eq</slug>
+<bank xmlns="https://checkit.clontz.org" version="0.0">
+    <title>Differential Equations</title>
+    <url>https://github.com/StevenClontz/checkit-clontz-diff-eq</url>
     <outcomes>
         <outcome>
             <title>Structure of an IVP and Verifying Solutions</title>

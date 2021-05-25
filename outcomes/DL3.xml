@@ -1,4 +1,5 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>
           Explain how to use convolution along with the formula
@@ -6,12 +7,12 @@
           inverse Laplace transform:
       </p>
       <me>
-          \mathcal{L}^{-1}\left\{<xsl:value-of select="transform"/>\right\}
+          \mathcal{L}^{-1}\left\{ {{transform}} \right\}
       </me>
   </statement>
   <answer>
       <me>
-          <xsl:value-of select="pretransform"/>
+          {{pretransform}}
       </me>
   </answer>
 </exercise>

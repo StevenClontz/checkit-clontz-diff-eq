@@ -1,16 +1,16 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
     <p>
 Explain how to find the general solution to the given ODE,
 and the particular solution that satisfies the given initial value.
     </p>
     <me>
-      <xsl:value-of select="ode"/>,\hspace{1em}
-      y\big(<xsl:value-of select="t0"/>\big)=<xsl:value-of select="y0"/>
+      {{ode}},\hspace{1em} y\big({{t0}}\big)={{y0}}
     </me>
   </statement>
   <answer>
-    <me><xsl:value-of select="ode_sol"/></me>
-    <me><xsl:value-of select="ivp_sol"/></me>
+      <me>{{ode_sol}}</me>
+      <me>{{ivp_sol}}</me>
   </answer>
 </exercise>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+    <p>
+Show that
+        <m>y_1={{y1}}</m>,
+        <m>y_2={{y2}}</m>, and
+        <m>y_3={{y3}}</m>,
+are particular solutions to the following ODE:
+    </p>
+      <me>{{ode}}</me>
+    <p>
+Then show that these solutions are independent by using the Wronskian,
+and give the general solution for the ODE.
+    </p>
+  </statement>
+    <answer>
+        <me>
+            W({{y1}},{{y2}},{{y3}})=
+            {{wronskian}}
+        </me>
+        <me>
+            y = k_1{{y1}}+k_2{{y2}}+k_3{{y3}}
+        </me>
+    </answer>
+</exercise>
