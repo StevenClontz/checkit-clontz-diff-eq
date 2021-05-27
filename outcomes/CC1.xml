@@ -6,7 +6,7 @@ Explain how to find the general solution to the given ODE,
 and the particular solution that satisfies the given initial value.
     </p>
     <me>
-      {{ode}},\hspace{1em} y\big({{t0}}\big)={{y0}}
+      {{ode}};\qquad y\left({{t0}}\right)={{y0}}
     </me>
   </statement>
   <answer>

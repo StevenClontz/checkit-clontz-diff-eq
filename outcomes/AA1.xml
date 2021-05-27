@@ -21,11 +21,9 @@ Then show how to verify that its solution is valid.
                   <ul>
                       <li>IVP:
                           <m>
-                              {{ode}}
-                              \hspace{2em}
+                              {{ode}};\qquad
                               {{y}}({{t0}})=
-                              {{y0}}
-                              {{#yp0}}\hspace{2em}
+                              {{y0}}{{#yp0}},
                                   {{y}}'({{t0}})=
                                   {{yp0}}
                               {{/yp0}}

@@ -6,7 +6,7 @@
           {{#ivps}}
         <li>
         <me>
-          {{ode}}\hspace{2em}
+          {{ode}};\qquad
           {{var}}(0)={{iv1}},
           {{var}}(0)={{iv2}}
         </me>

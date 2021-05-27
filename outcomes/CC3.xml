@@ -17,7 +17,7 @@
       <ol>
           {{#odes}}
         <li><me>
-            {{#complex}}{{complex}}\hspace{2em}{{/complex}}
+            {{#complex}}{{complex}};\qquad{{/complex}}
             {{sol}}
          </me></li>
           {{/odes}}

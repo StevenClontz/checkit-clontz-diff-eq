@@ -7,7 +7,7 @@
       IVP.
     </p>
     <me>
-        x'={{xp}}\hspace{2em}
+        x'={{xp}};\qquad
         {{#init}}x({{t}})={{x}}{{/init}}
     </me>
   </statement>

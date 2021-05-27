@@ -3,7 +3,7 @@
   <statement>
     <p>Explain how to find the solution to the given IVP.</p>
     <me>
-        {{ode}}\hspace{2em}
+        {{ode}};\qquad
         y({{t0}})={{y0}}
     </me>
   </statement>
