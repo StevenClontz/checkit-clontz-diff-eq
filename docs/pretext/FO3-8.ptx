@@ -1,0 +1,26 @@
+<exercise checkit-seed="0008" checkit-slug="FO3" checkit-title="Substitution for First-Order IVPs">
+  <statement>
+    <p>
+      Use an appropriate substitution
+      to show that all of the following ODEs may be transformed into
+      the same linear ODE.
+      (Do not fully solve these ODEs.)
+    </p>
+    <ol>
+        <li><m>-5 \, t^{4} + 7 \, {y'} = -18 \, t^{9} - 21 \, t^{8} y - 6</m></li>
+        <li><m>5 \, t^{6} + y = 3 \, t^{9} y + t {y'}</m></li>
+        <li><m>5 \, t^{4} y^{6} + 5 \, {y'} = 3 \, t^{8} y</m></li>
+    </ol>
+  </statement>
+  <answer>
+    <ol>
+            <li><p>Let <m>u = 6 \, t + 7 \, y</m>.</p></li>
+            <li><p>Let <m>u = \frac{y}{t}</m>.</p></li>
+            <li><p>Let <m>u = \frac{1}{y^{5}}</m>.</p></li>
+    </ol>
+      <p>
+          All ODEs transform into
+          <m>3 \, t^{8} u + {u'} = 5 \, t^{4}</m>.
+      </p>
+  </answer>
+</exercise>

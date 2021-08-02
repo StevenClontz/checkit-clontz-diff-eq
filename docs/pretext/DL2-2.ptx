@@ -1,0 +1,30 @@
+<exercise checkit-seed="0002" checkit-slug="DL2" checkit-title="Laplace Transforms from Definition and Formulas">
+  <statement>
+      <ol>
+      <li>
+Compute the Laplace transform of
+<m>y = -3 \, t^{2} + 3 \, \cos\left(3 \, t\right) + 2 \, \mathrm{u}\left(t - 4\right) + 2</m> by using a transform table.
+      </li>
+          <li>
+Show why <m>\mathcal{L}\{ 3 \, e^{\left(2 \, t\right)} \}=\frac{3}{s - 2}</m>
+using the integral definition of a Laplace transform.
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+\mathcal{L}\{y\} = \frac{3 \, s}{s^{2} + 9} + \frac{2 \, e^{\left(-4 \, s\right)}}{s} + \frac{2}{s} - \frac{6}{s^{3}}
+      </me>
+          </li>
+          <li>
+              <me>
+\mathcal{L}\{ 3 \, e^{\left(2 \, t\right)} \}
+=\int_0^{\infty} 3 \, e^{\left(2 \, t\right)} e^{-st}\,dt
+=\frac{3}{s - 2}
+              </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

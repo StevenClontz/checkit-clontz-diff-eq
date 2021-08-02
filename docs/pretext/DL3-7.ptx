@@ -1,0 +1,17 @@
+<exercise checkit-seed="0007" checkit-slug="DL3" checkit-title="Inverse Laplace Transforms and Convolution">
+  <statement>
+      <p>
+          Explain how to use convolution along with the formula
+          <m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
+          inverse Laplace transform:
+      </p>
+      <me>
+          \mathcal{L}^{-1}\left\{ \frac{5}{s^{2} - s - 6} \right\}
+      </me>
+  </statement>
+  <answer>
+      <me>
+          e^{\left(3 \, t\right)} - e^{\left(-2 \, t\right)}
+      </me>
+  </answer>
+</exercise>

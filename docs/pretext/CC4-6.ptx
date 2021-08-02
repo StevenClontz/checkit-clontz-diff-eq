@@ -1,0 +1,25 @@
+<exercise checkit-seed="0006" checkit-slug="CC4" checkit-title="Constant-Coefficient Linear Homogeneous Second-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to each given IVP.</p>
+      <ol>
+        <li>
+        <me>
+          -{x''} = 25 \, {x};\qquad
+          {x}(0)=-1,
+          {x}(0)=-25
+        </me>
+        </li>
+        <li>
+        <me>
+          8 \, {y'} = -15 \, {y} - {y''};\qquad
+          {y}(0)=7,
+          {y}(0)=-27
+        </me>
+        </li>
+      </ol>
+  </statement>
+  <answer>
+        <me>{x} = -\cos\left(5 \, t\right) - 5 \, \sin\left(5 \, t\right)</me>
+        <me>{y} = 4 \, e^{\left(-3 \, t\right)} + 3 \, e^{\left(-5 \, t\right)}</me>
+  </answer>
+</exercise>

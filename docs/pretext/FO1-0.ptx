@@ -1,0 +1,12 @@
+<exercise checkit-seed="0000" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        3 \, {y} \sin\left(t\right) - 3 \, {y'} = 0;\qquad
+        y(0)=-2 \, e^{\left(-1\right)}
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -2 \, e^{\left(-\cos\left(t\right)\right)}</me>
+  </answer>
+</exercise>

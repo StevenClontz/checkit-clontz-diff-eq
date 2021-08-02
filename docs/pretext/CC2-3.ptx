@@ -1,0 +1,9 @@
+<exercise checkit-seed="0003" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to the given IVP.</p>
+    <me>16 \, {y} + 24 \, e^{t} = 4 \, {y'};\qquad y(0)=-5</me>
+  </statement>
+  <answer>
+    <me>y=-3 \, e^{\left(4 \, t\right)} - 2 \, e^{t}</me>
+  </answer>
+</exercise>

@@ -1,0 +1,17 @@
+<exercise checkit-seed="0004" checkit-slug="DL3" checkit-title="Inverse Laplace Transforms and Convolution">
+  <statement>
+      <p>
+          Explain how to use convolution along with the formula
+          <m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
+          inverse Laplace transform:
+      </p>
+      <me>
+          \mathcal{L}^{-1}\left\{ \frac{8}{s^{2} - 3 \, s - 10} \right\}
+      </me>
+  </statement>
+  <answer>
+      <me>
+          \frac{8}{7} \, e^{\left(5 \, t\right)} - \frac{8}{7} \, e^{\left(-2 \, t\right)}
+      </me>
+  </answer>
+</exercise>

@@ -1,0 +1,21 @@
+<exercise checkit-seed="0004" checkit-slug="DL4" checkit-title="Using Laplace Transforms to Solve IVPs">
+  <statement>
+      <p>
+          Explain how to solve the following IVP.
+      </p>
+      <me>
+          2 \, {y''} = 16 \, {y} + 4 \, {y'} + 48 \, \delta\left(t - 1\right);\qquad
+          y(0)=0,
+          y'(0)=24
+      </me>
+      <p>Hint: <m>\frac{1}{x^{2} - 2 \, x - 8} = -\frac{1}{6 \, {\left(x + 2\right)}} + \frac{1}{6 \, {\left(x - 4\right)}}</m>.</p>
+  </statement>
+  <answer>
+      <me>
+          \mathcal{L}\{y\}=\frac{24 \, e^{\left(-s\right)}}{s^{2} - 2 \, s - 8} + \frac{24}{s^{2} - 2 \, s - 8}
+      </me>
+      <me>
+          {y} = 4 \, e^{\left(4 \, t - 4\right)} \mathrm{u}\left(t - 1\right) - 4 \, e^{\left(-2 \, t + 2\right)} \mathrm{u}\left(t - 1\right) + 4 \, e^{\left(4 \, t\right)} - 4 \, e^{\left(-2 \, t\right)}
+      </me>
+  </answer>
+</exercise>

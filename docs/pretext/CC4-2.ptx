@@ -1,0 +1,25 @@
+<exercise checkit-seed="0002" checkit-slug="CC4" checkit-title="Constant-Coefficient Linear Homogeneous Second-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to each given IVP.</p>
+      <ol>
+        <li>
+        <me>
+          0 = {x''} + 36 \, {x};\qquad
+          {x}(0)=-2,
+          {x}(0)=0
+        </me>
+        </li>
+        <li>
+        <me>
+          15 \, {y} + {y''} = -8 \, {y'};\qquad
+          {y}(0)=-7,
+          {y}(0)=31
+        </me>
+        </li>
+      </ol>
+  </statement>
+  <answer>
+        <me>{x} = -2 \, \cos\left(6 \, t\right)</me>
+        <me>{y} = -2 \, e^{\left(-3 \, t\right)} - 5 \, e^{\left(-5 \, t\right)}</me>
+  </answer>
+</exercise>

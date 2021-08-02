@@ -1,0 +1,12 @@
+<exercise checkit-seed="0009" checkit-slug="FO2" checkit-title="Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -4 \, {y} = {y'} t - \frac{5}{t^{3}};\qquad
+        y(1)=2
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = \frac{5}{t^{3}} - \frac{3}{t^{4}}</me>
+  </answer>
+</exercise>

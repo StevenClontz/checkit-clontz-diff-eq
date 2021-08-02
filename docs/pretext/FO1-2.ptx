@@ -1,0 +1,12 @@
+<exercise checkit-seed="0002" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -4 \, {y} \sin\left(t\right) = 2 \, {y'};\qquad
+        y(0)=-e^{2}
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -e^{\left(2 \, \cos\left(t\right)\right)}</me>
+  </answer>
+</exercise>

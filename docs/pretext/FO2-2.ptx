@@ -1,0 +1,12 @@
+<exercise checkit-seed="0002" checkit-slug="FO2" checkit-title="Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -3 \, t^{4} - {y'} t = -3 \, {y};\qquad
+        y(1)=-1
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -3 \, t^{4} + 2 \, t^{3}</me>
+  </answer>
+</exercise>

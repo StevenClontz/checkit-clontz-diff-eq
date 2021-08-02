@@ -1,0 +1,30 @@
+<exercise checkit-seed="0004" checkit-slug="DL2" checkit-title="Laplace Transforms from Definition and Formulas">
+  <statement>
+      <ol>
+      <li>
+Compute the Laplace transform of
+<m>y = -2 \, t^{2} - 3 \, \delta\left(t - 2\right) - 2 \, \sin\left(2 \, t\right) + 3</m> by using a transform table.
+      </li>
+          <li>
+Show why <m>\mathcal{L}\{ 2 \, e^{\left(3 \, t\right)} \}=\frac{2}{s - 3}</m>
+using the integral definition of a Laplace transform.
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+\mathcal{L}\{y\} = -\frac{4}{s^{2} + 4} + \frac{3}{s} - \frac{4}{s^{3}} - 3 \, e^{\left(-2 \, s\right)}
+      </me>
+          </li>
+          <li>
+              <me>
+\mathcal{L}\{ 2 \, e^{\left(3 \, t\right)} \}
+=\int_0^{\infty} 2 \, e^{\left(3 \, t\right)} e^{-st}\,dt
+=\frac{2}{s - 3}
+              </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

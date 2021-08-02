@@ -1,0 +1,9 @@
+<exercise checkit-seed="0006" checkit-slug="CC5" checkit-title="Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs">
+  <statement>
+    <p>Explain how to find the general solution to the given ODE.</p>
+      <me>12 \, {y} - {y''} - {y'} = -32 \, \cos\left(2 \, t\right) - 4 \, \sin\left(2 \, t\right)</me>
+  </statement>
+  <answer>
+      <me>{y} = k_{1} e^{\left(3 \, t\right)} + k_{2} e^{\left(-4 \, t\right)} - 2 \, \cos\left(2 \, t\right)</me>
+  </answer>
+</exercise>

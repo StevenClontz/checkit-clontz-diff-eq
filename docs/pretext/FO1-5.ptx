@@ -1,0 +1,12 @@
+<exercise checkit-seed="0005" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        3 \, {y} {\left(2 \, t + 1\right)} = -3 \, {y'};\qquad
+        y(0)=-e^{\left(-2\right)}
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -e^{\left(-t^{2} - t - 2\right)}</me>
+  </answer>
+</exercise>

@@ -1,0 +1,21 @@
+<exercise checkit-seed="0008" checkit-slug="FO4" checkit-title="Exact First-Order IVPs">
+  <statement>
+    <p>
+        Explain why one of the following ODEs is exact, and why the other is not.
+    </p>
+      <me>-2 \, t^{2} {y'} + 8 \, t y {y'} - 12 \, y^{2} {y'} - 4 \, t y + 4 \, y^{2} = 0</me><me>-2 \, t^{2} y {y'} + 4 \, y^{2} + 5 \, t {y'} = 2 \, t^{2} {y'} + 10 \, t</me>
+    <p>
+      Then find an implicit solution for the exact ODE
+      that satisfies the initial value
+        <m>y(-1)=1</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>The following ODE is exact.</p>
+      <me>-2 \, t^{2} {y'} + 8 \, t y {y'} - 12 \, y^{2} {y'} - 4 \, t y + 4 \, y^{2} = 0</me>
+    <p>
+      Its implicit solution satisfying the initial value is:
+    </p>
+      <me>2 \, t^{2} y - 4 \, t y^{2} + 4 \, y^{3} = 10</me>
+  </answer>
+</exercise>

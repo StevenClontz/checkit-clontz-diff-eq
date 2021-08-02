@@ -1,0 +1,12 @@
+<exercise checkit-seed="0006" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -3 \, {y'} = 9 \, {y} \cos\left(t\right);\qquad
+        y(0)=-3
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -3 \, e^{\left(-3 \, \sin\left(t\right)\right)}</me>
+  </answer>
+</exercise>

@@ -1,0 +1,23 @@
+<exercise checkit-seed="0002" checkit-slug="AA2" checkit-title="Direction Fields">
+  <statement>
+      <p>
+Modify the line of SageMath code
+<c>t,y = var('t y'); plot_slope_field(FIXME, (t,-5,5), (y,-5,5))</c>
+and run it at <url href="https://sagecell.sagemath.org/"/> to
+produce the direction field for the ODE <m>{y'} = \sin\left(\frac{1}{2} \, {y}\right)</m>.
+      </p>
+      <p>
+Then explain how to use its direction field to approximate the
+value of <m>y(-3)</m> given
+the initial value <m>y(-1)=1</m>.
+      </p>
+  </statement>
+  <answer>
+      <p>
+          Replace <c>FIXME</c> with <c>sin(y/2)</c> to show
+          the direction field. Then sketch a curve passing through the initial value
+          to show that
+          <m>y(-3)\approx 0.35</m>.
+      </p>
+  </answer>
+</exercise>

@@ -1,0 +1,39 @@
+<exercise checkit-seed="0001" checkit-slug="AA5" checkit-title="Strategies for Solving IVPs">
+    <statement>
+        <p>
+For each ODE, describe an appropriate strategy to find its
+general solution, and the features of the ODE that make
+that strategy appropriate. (Do not fully solve these ODEs.)
+        </p>
+        <ol>
+                <li>
+                    <m>-4 \, {y} t = 6 \, {y'} {y}^{2} + 2 \, {y'} t^{2} + 2 \, t</m>
+                </li>
+                <li>
+                    <m>-4 \, {y} + 6 \, \mathrm{u}\left(t - 3\right) = -{y''}</m>
+                </li>
+                <li>
+                    <m>-12 \, {y'} - {y''} = 32 \, {y}</m>
+                </li>
+                <li>
+                    <m>3 \, t^{4} + 3 \, {y} = {y'} t</m>
+                </li>
+        </ol>
+  </statement>
+  <answer>
+        <ol>
+                <li>
+The ODE is exact, so it can be solved by finding a potential function.
+                </li>
+                <li>
+The ODE is linear constant-coefficient with a discontinuous function, so it can be solved by using Laplace transforms.
+                </li>
+                <li>
+The ODE is linear homogeneous with constant coefficients, so it can be solved by using D-notation and factoring.
+                </li>
+                <li>
+The ODE is linear first-order, so it can be solved by solving its homogeneous form and then using variation of parameters, or using an integrating factor.
+                </li>
+        </ol>
+  </answer>
+</exercise>

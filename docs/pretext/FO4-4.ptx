@@ -1,0 +1,21 @@
+<exercise checkit-seed="0004" checkit-slug="FO4" checkit-title="Exact First-Order IVPs">
+  <statement>
+    <p>
+        Explain why one of the following ODEs is exact, and why the other is not.
+    </p>
+      <me>-t {y'} = -8 \, y^{3} {y'} + 15 \, t^{2} + y</me><me>-4 \, t^{2} y {y'} = 10 \, t y {y'} + 4 \, t y - y</me>
+    <p>
+      Then find an implicit solution for the exact ODE
+      that satisfies the initial value
+        <m>y(1)=-1</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>The following ODE is exact.</p>
+      <me>-t {y'} = -8 \, y^{3} {y'} + 15 \, t^{2} + y</me>
+    <p>
+      Its implicit solution satisfying the initial value is:
+    </p>
+      <me>-2 \, y^{4} + 5 \, t^{3} + t y = 2</me>
+  </answer>
+</exercise>

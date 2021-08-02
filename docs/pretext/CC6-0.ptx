@@ -1,0 +1,11 @@
+<exercise checkit-seed="0000" checkit-slug="CC6" checkit-title="Autonomous Linear First-Order IVP Systems">
+  <statement>
+    <p>Explain how to find the solution to the given system of IVPs.</p>
+      <me>-4 \, {x} - 12 \, {y} = {x'};\qquad x(0)=1</me>
+      <me>{y'} + 3 \, {x} = {y};\qquad y(0)=-4</me>
+  </statement>
+  <answer>
+      <me>x=4 \, e^{\left(5 \, t\right)} - 3 \, e^{\left(-8 \, t\right)}</me>
+      <me>y=-3 \, e^{\left(5 \, t\right)} - e^{\left(-8 \, t\right)}</me>
+  </answer>
+</exercise>

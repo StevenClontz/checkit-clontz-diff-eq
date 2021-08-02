@@ -1,0 +1,12 @@
+<exercise checkit-seed="0007" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        9 \, {y'} - \frac{6}{{y}^{2}} = \frac{6 \, t}{{y}^{2}};\qquad
+        y(2)=4
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = {\left(t^{2} + 2 \, t + 56\right)}^{\frac{1}{3}}</me>
+  </answer>
+</exercise>

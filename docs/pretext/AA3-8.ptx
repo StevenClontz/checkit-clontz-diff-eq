@@ -1,0 +1,23 @@
+<exercise checkit-seed="0008" checkit-slug="AA3" checkit-title="Euler's Method">
+  <statement>
+    <p>
+      Show how to use Euler's method with two steps to approximate
+      <m>x(-0.40)</m> given the following
+      IVP.
+    </p>
+    <me>
+        x'=-4 \, t^{2} x + 4 \, t^{2} - 3;\qquad
+        x(-1)=0
+    </me>
+  </statement>
+  <answer>
+    <ul>
+            <li>
+                <m>x(-0.70)\approx 0.300</m>
+            </li>
+            <li>
+                <m>x(-0.40)\approx -0.188</m>
+            </li>
+    </ul>
+  </answer>
+</exercise>

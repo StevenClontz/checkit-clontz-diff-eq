@@ -1,0 +1,25 @@
+<exercise checkit-seed="0004" checkit-slug="Extra1" checkit-title="Wronskian">
+  <statement>
+    <p>
+Show that
+        <m>y_1=\cos\left(6 \, t\right)</m>,
+        <m>y_2=e^{\left(-3 \, t\right)}</m>, and
+        <m>y_3=\sin\left(6 \, t\right)</m>,
+are particular solutions to the following ODE:
+    </p>
+      <me>-72 \, {y'} - 6 \, {y''} - 78 \, {y} = 2 \, {y'''}</me>
+    <p>
+Then show that these solutions are independent by using the Wronskian,
+and give the general solution for the ODE.
+    </p>
+  </statement>
+    <answer>
+        <me>
+            W(\cos\left(6 \, t\right),e^{\left(-3 \, t\right)},\sin\left(6 \, t\right))=
+            -270 \, e^{\left(-3 \, t\right)}
+        </me>
+        <me>
+            y = k_1\cos\left(6 \, t\right)+k_2e^{\left(-3 \, t\right)}+k_3\sin\left(6 \, t\right)
+        </me>
+    </answer>
+</exercise>

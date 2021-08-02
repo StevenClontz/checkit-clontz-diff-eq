@@ -1,0 +1,39 @@
+<exercise checkit-seed="0004" checkit-slug="AA5" checkit-title="Strategies for Solving IVPs">
+    <statement>
+        <p>
+For each ODE, describe an appropriate strategy to find its
+general solution, and the features of the ODE that make
+that strategy appropriate. (Do not fully solve these ODEs.)
+        </p>
+        <ol>
+                <li>
+                    <m>0 = -49 \, {y} + {y''} + 3 \, \mathrm{u}\left(t - 4\right)</m>
+                </li>
+                <li>
+                    <m>5 \, {y} = 2 \, t^{4} + {y'} t</m>
+                </li>
+                <li>
+                    <m>-14 \, {y} - {y''} - 9 \, {y'} = 0</m>
+                </li>
+                <li>
+                    <m>2 \, {y}^{2} - 6 \, {y} {y'} - 10 \, t = -4 \, {y} {y'} t</m>
+                </li>
+        </ol>
+  </statement>
+  <answer>
+        <ol>
+                <li>
+The ODE is linear constant-coefficient with a discontinuous function, so it can be solved by using Laplace transforms.
+                </li>
+                <li>
+The ODE is linear first-order, so it can be solved by solving its homogeneous form and then using variation of parameters, or using an integrating factor.
+                </li>
+                <li>
+The ODE is linear homogeneous with constant coefficients, so it can be solved by using D-notation and factoring.
+                </li>
+                <li>
+The ODE is exact, so it can be solved by finding a potential function.
+                </li>
+        </ol>
+  </answer>
+</exercise>

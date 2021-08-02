@@ -1,0 +1,9 @@
+<exercise checkit-seed="0004" checkit-slug="CC5" checkit-title="Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs">
+  <statement>
+    <p>Explain how to find the general solution to the given ODE.</p>
+      <me>-6 \, {y} - 2 \, \cos\left(2 \, t\right) + 10 \, \sin\left(2 \, t\right) = {y''} + 5 \, {y'}</me>
+  </statement>
+  <answer>
+      <me>{y} = k_{1} e^{\left(-2 \, t\right)} + k_{2} e^{\left(-3 \, t\right)} - \cos\left(2 \, t\right)</me>
+  </answer>
+</exercise>

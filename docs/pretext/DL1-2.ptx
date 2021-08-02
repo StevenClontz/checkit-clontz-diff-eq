@@ -1,0 +1,56 @@
+<exercise checkit-seed="0002" checkit-slug="DL1" checkit-title="Discontinuous Functions and Distributions">
+  <statement>
+      <p>
+      Illustrate each of the following integrals. Then explain how
+        to compute each.
+      </p>
+      <ol>
+          <li>
+      <me>
+          \int_{ 6 }^{ 10 }
+          4 \, \delta\left(t - 5\right) e^{\left(2 \, t\right)}
+          \,dt
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 2 }^{ 7 }
+          4 \, \delta\left(t - 5\right) e^{\left(2 \, t\right)}
+          \,dt
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 3 }^{ 9 }
+          4 \, e^{\left(2 \, t\right)} \mathrm{u}\left(t - 5\right)
+          \,dt
+      </me>
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+          \int_{ 6 }^{ 10 }
+          4 \, \delta\left(t - 5\right) e^{\left(2 \, t\right)}
+          \,dt = 0
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 2 }^{ 7 }
+          4 \, \delta\left(t - 5\right) e^{\left(2 \, t\right)}
+          \,dt = 4 \, e^{10}
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 3 }^{ 9 }
+          4 \, e^{\left(2 \, t\right)} \mathrm{u}\left(t - 5\right)
+          \,dt = 2 \, e^{18} - 2 \, e^{10}
+      </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

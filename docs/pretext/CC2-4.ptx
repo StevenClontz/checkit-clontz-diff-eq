@@ -1,0 +1,9 @@
+<exercise checkit-seed="0004" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to the given IVP.</p>
+    <me>4 \, {y} + 2 \, {y'} - 4 \, e^{\left(-2 \, t\right)} = 0;\qquad y(0)=5</me>
+  </statement>
+  <answer>
+    <me>y=2 \, t e^{\left(-2 \, t\right)} + 5 \, e^{\left(-2 \, t\right)}</me>
+  </answer>
+</exercise>

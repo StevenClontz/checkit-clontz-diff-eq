@@ -1,0 +1,38 @@
+<exercise checkit-seed="0007" checkit-slug="AA4" checkit-title="Existence/uniqueness IVP Theorems">
+  <statement>
+      <p>
+          Explain how to use an appropriate Existence and Uniqueness Theorem to determine
+          the largest possible domain guaranteed for a unique solution to each IVP.
+      </p>
+      <ol>
+              <li>
+                  <m>
+                      0 = -{\left(2 \, {y} + t + 9\right)}^{7} - {\left({y'} - 5\right)}^{5};\qquad
+                      {y}(-2)=-3
+                      
+                      
+                  </m>
+              </li>
+              <li>
+                  <m>
+                      {\left(t + 4\right)} {\left(t + 1\right)} y + 4 \, {y''} + e^{t} = -{\left(t - 6\right)} {y'''} e^{t};\qquad
+                      y(3)=8
+                      ,y'(3)=6
+                      ,y''(3)=2
+                  </m>
+              </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+              <li>
+                      By the First Order ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined for all real numbers.
+              </li>
+              <li>
+                      By the Linear ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined on the interval <m>(-\infty,6)</m>.
+              </li>
+      </ol>
+  </answer>
+</exercise>

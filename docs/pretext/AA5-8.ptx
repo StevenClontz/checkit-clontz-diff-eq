@@ -1,0 +1,39 @@
+<exercise checkit-seed="0008" checkit-slug="AA5" checkit-title="Strategies for Solving IVPs">
+    <statement>
+        <p>
+For each ODE, describe an appropriate strategy to find its
+general solution, and the features of the ODE that make
+that strategy appropriate. (Do not fully solve these ODEs.)
+        </p>
+        <ol>
+                <li>
+                    <m>4 \, {y}^{2} = -6 \, {y'} {y}^{2} - 8 \, {y'} {y} t - 15 \, t^{2}</m>
+                </li>
+                <li>
+                    <m>8 \, {y'} - {y''} = 15 \, {y}</m>
+                </li>
+                <li>
+                    <m>-{y'} t + 10 \, t^{2} + 4 \, {y} = 0</m>
+                </li>
+                <li>
+                    <m>4 \, {y} + 5 \, \mathrm{u}\left(t - 2\right) = {y''}</m>
+                </li>
+        </ol>
+  </statement>
+  <answer>
+        <ol>
+                <li>
+The ODE is exact, so it can be solved by finding a potential function.
+                </li>
+                <li>
+The ODE is linear homogeneous with constant coefficients, so it can be solved by using D-notation and factoring.
+                </li>
+                <li>
+The ODE is linear first-order, so it can be solved by solving its homogeneous form and then using variation of parameters, or using an integrating factor.
+                </li>
+                <li>
+The ODE is linear constant-coefficient with a discontinuous function, so it can be solved by using Laplace transforms.
+                </li>
+        </ol>
+  </answer>
+</exercise>

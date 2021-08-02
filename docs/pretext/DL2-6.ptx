@@ -1,0 +1,30 @@
+<exercise checkit-seed="0006" checkit-slug="DL2" checkit-title="Laplace Transforms from Definition and Formulas">
+  <statement>
+      <ol>
+      <li>
+Compute the Laplace transform of
+<m>y = 3 \, t^{3} - 2 \, \sin\left(4 \, t\right) + 4 \, \mathrm{u}\left(t - 1\right) + 3</m> by using a transform table.
+      </li>
+          <li>
+Show why <m>\mathcal{L}\{ 4 \, e^{\left(3 \, t\right)} \}=\frac{4}{s - 3}</m>
+using the integral definition of a Laplace transform.
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+\mathcal{L}\{y\} = \frac{4 \, e^{\left(-s\right)}}{s} - \frac{8}{s^{2} + 16} + \frac{3}{s} + \frac{18}{s^{4}}
+      </me>
+          </li>
+          <li>
+              <me>
+\mathcal{L}\{ 4 \, e^{\left(3 \, t\right)} \}
+=\int_0^{\infty} 4 \, e^{\left(3 \, t\right)} e^{-st}\,dt
+=\frac{4}{s - 3}
+              </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

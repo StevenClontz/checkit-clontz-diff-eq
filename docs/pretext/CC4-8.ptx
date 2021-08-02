@@ -1,0 +1,25 @@
+<exercise checkit-seed="0008" checkit-slug="CC4" checkit-title="Constant-Coefficient Linear Homogeneous Second-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to each given IVP.</p>
+      <ol>
+        <li>
+        <me>
+          -6 \, {x} = -{x'} - {x''};\qquad
+          {x}(0)=0,
+          {x}(0)=-20
+        </me>
+        </li>
+        <li>
+        <me>
+          0 = {y''} + 49 \, {y};\qquad
+          {y}(0)=2,
+          {y}(0)=-35
+        </me>
+        </li>
+      </ol>
+  </statement>
+  <answer>
+        <me>{x} = -4 \, e^{\left(2 \, t\right)} + 4 \, e^{\left(-3 \, t\right)}</me>
+        <me>{y} = 2 \, \cos\left(7 \, t\right) - 5 \, \sin\left(7 \, t\right)</me>
+  </answer>
+</exercise>

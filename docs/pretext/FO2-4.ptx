@@ -1,0 +1,12 @@
+<exercise checkit-seed="0004" checkit-slug="FO2" checkit-title="Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -3 \, {y} = {y'} t + \frac{2}{t^{2}};\qquad
+        y(-1)=1
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -\frac{2}{t^{2}} - \frac{3}{t^{3}}</me>
+  </answer>
+</exercise>

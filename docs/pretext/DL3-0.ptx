@@ -1,0 +1,17 @@
+<exercise checkit-seed="0000" checkit-slug="DL3" checkit-title="Inverse Laplace Transforms and Convolution">
+  <statement>
+      <p>
+          Explain how to use convolution along with the formula
+          <m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
+          inverse Laplace transform:
+      </p>
+      <me>
+          \mathcal{L}^{-1}\left\{ \frac{9}{s^{2} + 9 \, s + 20} \right\}
+      </me>
+  </statement>
+  <answer>
+      <me>
+          9 \, e^{\left(-4 \, t\right)} - 9 \, e^{\left(-5 \, t\right)}
+      </me>
+  </answer>
+</exercise>

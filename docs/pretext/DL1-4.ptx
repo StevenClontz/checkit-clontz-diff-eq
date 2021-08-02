@@ -1,0 +1,56 @@
+<exercise checkit-seed="0004" checkit-slug="DL1" checkit-title="Discontinuous Functions and Distributions">
+  <statement>
+      <p>
+      Illustrate each of the following integrals. Then explain how
+        to compute each.
+      </p>
+      <ol>
+          <li>
+      <me>
+          \int_{ 4 }^{ 10 }
+          8 \, e^{\left(4 \, t\right)} \mathrm{u}\left(t - 6\right)
+          \,dt
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 2 }^{ 9 }
+          8 \, \delta\left(t - 6\right) e^{\left(4 \, t\right)}
+          \,dt
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 7 }^{ 11 }
+          8 \, \delta\left(t - 6\right) e^{\left(4 \, t\right)}
+          \,dt
+      </me>
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+          \int_{ 4 }^{ 10 }
+          8 \, e^{\left(4 \, t\right)} \mathrm{u}\left(t - 6\right)
+          \,dt = 2 \, e^{40} - 2 \, e^{24}
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 2 }^{ 9 }
+          8 \, \delta\left(t - 6\right) e^{\left(4 \, t\right)}
+          \,dt = 8 \, e^{24}
+      </me>
+          </li>
+          <li>
+      <me>
+          \int_{ 7 }^{ 11 }
+          8 \, \delta\left(t - 6\right) e^{\left(4 \, t\right)}
+          \,dt = 0
+      </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

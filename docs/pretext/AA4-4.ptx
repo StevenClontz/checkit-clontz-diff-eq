@@ -1,0 +1,38 @@
+<exercise checkit-seed="0004" checkit-slug="AA4" checkit-title="Existence/uniqueness IVP Theorems">
+  <statement>
+      <p>
+          Explain how to use an appropriate Existence and Uniqueness Theorem to determine
+          the largest possible domain guaranteed for a unique solution to each IVP.
+      </p>
+      <ol>
+              <li>
+                  <m>
+                      -{\left({y'} - 2\right)}^{5} - {\left(2 \, {y} + t - 14\right)}^{2} = 0;\qquad
+                      {y}(5)=6
+                      
+                      
+                  </m>
+              </li>
+              <li>
+                  <m>
+                      {\left(t + 4\right)} {\left(t + 1\right)} y + e^{\left(-2 \, t\right)} = -{\left(t - 5\right)} {y'''} e^{t} + 5 \, {y''};\qquad
+                      y(9)=1
+                      ,y'(9)=-4
+                      ,y''(9)=2
+                  </m>
+              </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+              <li>
+                      By the First Order ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined nearby the initial value.
+              </li>
+              <li>
+                      By the Linear ODE Existence and Uniqueness Theorem, the IVP has
+                      a unique solution defined on the interval <m>(5,+\infty)</m>.
+              </li>
+      </ol>
+  </answer>
+</exercise>

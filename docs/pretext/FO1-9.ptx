@@ -1,0 +1,12 @@
+<exercise checkit-seed="0009" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        6 \, {y'} = \frac{18 \, t}{{y}} + \frac{9}{{y}};\qquad
+        y(3)=3
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = \sqrt{3 \, t^{2} + 3 \, t - 27}</me>
+  </answer>
+</exercise>

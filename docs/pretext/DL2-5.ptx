@@ -1,0 +1,30 @@
+<exercise checkit-seed="0005" checkit-slug="DL2" checkit-title="Laplace Transforms from Definition and Formulas">
+  <statement>
+      <ol>
+      <li>
+Compute the Laplace transform of
+<m>y = -3 \, t^{2} + 2 \, \delta\left(t - 4\right) - 3 \, \sin\left(3 \, t\right) - 4</m> by using a transform table.
+      </li>
+          <li>
+Show why <m>\mathcal{L}\{ 3 \, e^{\left(4 \, t\right)} \}=\frac{3}{s - 4}</m>
+using the integral definition of a Laplace transform.
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+      <me>
+\mathcal{L}\{y\} = -\frac{9}{s^{2} + 9} - \frac{4}{s} - \frac{6}{s^{3}} + 2 \, e^{\left(-4 \, s\right)}
+      </me>
+          </li>
+          <li>
+              <me>
+\mathcal{L}\{ 3 \, e^{\left(4 \, t\right)} \}
+=\int_0^{\infty} 3 \, e^{\left(4 \, t\right)} e^{-st}\,dt
+=\frac{3}{s - 4}
+              </me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

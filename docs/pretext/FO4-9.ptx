@@ -1,0 +1,21 @@
+<exercise checkit-seed="0009" checkit-slug="FO4" checkit-title="Exact First-Order IVPs">
+  <statement>
+    <p>
+        Explain why one of the following ODEs is exact, and why the other is not.
+    </p>
+      <me>-10 \, t y - 10 \, y {y'} = 5 \, t^{2} {y'} + 15 \, t^{2}</me><me>-6 \, t^{2} y {y'} - 10 \, t y {y'} + 10 \, t y = -4 \, y</me>
+    <p>
+      Then find an implicit solution for the exact ODE
+      that satisfies the initial value
+        <m>y(1)=-1</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>The following ODE is exact.</p>
+      <me>-10 \, t y - 10 \, y {y'} = 5 \, t^{2} {y'} + 15 \, t^{2}</me>
+    <p>
+      Its implicit solution satisfying the initial value is:
+    </p>
+      <me>5 \, t^{3} + 5 \, t^{2} y + 5 \, y^{2} = 5</me>
+  </answer>
+</exercise>

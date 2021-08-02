@@ -1,0 +1,12 @@
+<exercise checkit-seed="0006" checkit-slug="FO2" checkit-title="Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -4 \, {y} - \frac{21}{t^{3}} = -{y'} t;\qquad
+        y(1)=-5
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = -2 \, t^{4} - \frac{3}{t^{3}}</me>
+  </answer>
+</exercise>

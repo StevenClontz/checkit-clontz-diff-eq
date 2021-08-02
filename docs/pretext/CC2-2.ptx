@@ -1,0 +1,9 @@
+<exercise checkit-seed="0002" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the particular solution to the given IVP.</p>
+    <me>-8 \, e^{\left(2 \, t\right)} = 8 \, {y} - 4 \, {y'};\qquad y(0)=-4</me>
+  </statement>
+  <answer>
+    <me>y=2 \, t e^{\left(2 \, t\right)} - 4 \, e^{\left(2 \, t\right)}</me>
+  </answer>
+</exercise>

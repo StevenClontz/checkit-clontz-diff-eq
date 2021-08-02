@@ -1,0 +1,21 @@
+<exercise checkit-seed="0002" checkit-slug="DL4" checkit-title="Using Laplace Transforms to Solve IVPs">
+  <statement>
+      <p>
+          Explain how to solve the following IVP.
+      </p>
+      <me>
+          -2 \, {y''} - 18 \, {y} = -36 \, \mathrm{u}\left(t - 2\right);\qquad
+          y(0)=-4,
+          y'(0)=0
+      </me>
+      <p>Hint: <m>\frac{1}{x^{3} + 9 \, x} = -\frac{x}{9 \, {\left(x^{2} + 9\right)}} + \frac{1}{9 \, x}</m>.</p>
+  </statement>
+  <answer>
+      <me>
+          \mathcal{L}\{y\}=-\frac{4 \, s}{s^{2} + 9} + \frac{18 \, e^{\left(-2 \, s\right)}}{{\left(s^{2} + 9\right)} s}
+      </me>
+      <me>
+          {y} = -2 \, \cos\left(3 \, t - 6\right) \mathrm{u}\left(t - 2\right) - 4 \, \cos\left(3 \, t\right) + 2 \, \mathrm{u}\left(t - 2\right)
+      </me>
+  </answer>
+</exercise>

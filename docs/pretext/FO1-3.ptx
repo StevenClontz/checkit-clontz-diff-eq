@@ -1,0 +1,12 @@
+<exercise checkit-seed="0003" checkit-slug="FO1" checkit-title="Linear Homogeneous First-Order IVPs">
+  <statement>
+    <p>Explain how to find the solution to the given IVP.</p>
+    <me>
+        -4 \, {y'} + \frac{12 \, t}{{y}} + \frac{4}{{y}} = 0;\qquad
+        y(-2)=4
+    </me>
+  </statement>
+  <answer>
+      <me>{y} = \sqrt{3 \, t^{2} + 2 \, t + 8}</me>
+  </answer>
+</exercise>
