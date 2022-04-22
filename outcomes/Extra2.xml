@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+    <statement>
+        <p>
+For each of the following ODEs, demonstrate how to find a
+general solution (implicit or explicit). If initial value(s) are
+given, also show how to find the corresponding particular solution.
+        </p>
+        <ol>
+        <!-- {{#problems}} -->
+            <li>
+                <p>
+                    <m>{{ode}}</m>
+                    <!-- {{#y0}} -->
+                    , <m>\,\,y({{t0}}) = {{y0}}</m>
+                    <!-- {{/y0}} -->
+                    <!-- {{#yp0}} -->
+                    , <m>\,\,y'({{t0}}) = {{yp0}}</m>
+                    <!-- {{/yp0}} -->
+                </p>
+            </li>
+        <!-- {{/problems}} -->
+        </ol>
+    </statement>
+    <answer>
+        <ol>
+        <!-- {{#problems}} -->
+            <li>
+                <!-- {{#ivp_sol}} -->
+                <p>
+                    <m>{{ivp_sol}}</m>
+                </p>
+                <!-- {{/ivp_sol}} -->
+                <!-- {{^ivp_sol}} -->
+                <p>
+                    <m>{{ode_sol}}</m>
+                </p>
+                <!-- {{/ivp_sol}} -->
+            </li>
+        <!-- {{/problems}} -->
+        </ol>
+    </answer>
+</exercise>

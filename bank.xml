@@ -208,5 +208,14 @@ Use the Wronskian to prove linear independence of particular solutions.
             <alignment>
             </alignment>
         </outcome>
+        <outcome>
+            <title>Clontz Spring 2022 Final</title>
+            <slug>Extra2</slug>
+            <description>
+Apply various techniques from a standard first-semester course to solve differential equations.
+            </description>
+            <alignment>
+            </alignment>
+        </outcome>
     </outcomes>
 </bank>
