@@ -8,7 +8,7 @@
         <me>
           {{ode}};\qquad
           {{var}}(0)={{iv1}},
-          {{var}}(0)={{iv2}}
+          {{var}}'(0)={{iv2}}
         </me>
         </li>
           {{/ivps}}
