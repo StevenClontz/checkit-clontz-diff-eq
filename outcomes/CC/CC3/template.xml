@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-    <p>Explain how to find the general solution to each given ODE using
-        exponential functions.</p>
-    <p>For each exponential solution using complex numbers, also provide
-        an alternate general solution using only real numbers.</p>
-      <ol>
-        {{#odes}}
-        <li>
-            <me>{{ode}}</me>
-        </li>
-        {{/odes}}
-      </ol>
-  </statement>
-  <answer>
-      <ol>
-          {{#odes}}
-        <li><me>
-            {{#complex}}{{complex}};\qquad{{/complex}}
-            {{sol}}
-         </me></li>
-          {{/odes}}
-      </ol>
-  </answer>
-</exercise>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Explain how to find the general solution to each given ODE using
+exponential functions.
+        </p>
+        <p>
+For each exponential solution using complex numbers, also provide
+an alternate general solution using only real numbers.
+        </p>
+    </intro>
+    <!-- {{#odes}} -->
+    <knowl>
+        <content>
+            <p><me>{{ode}}</me></p>
+        </content>
+        <outtro>
+            <p><me>
+{{#complex}}{{complex}};\qquad{{/complex}}
+{{sol}}
+            </me></p>
+        </outtro>
+    </knowl>
+    <!-- {{/odes}} -->
+</knowl>

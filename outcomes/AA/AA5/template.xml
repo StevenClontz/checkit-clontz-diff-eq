@@ -1,26 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-    <statement>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
         <p>
 For each ODE, describe an appropriate strategy to find its
 general solution, and the features of the ODE that make
 that strategy appropriate. (Do not fully solve these ODEs.)
         </p>
-        <ol>
-            {{#odes}}
-                <li>
-                    <m>{{ode}}</m>
-                </li>
-            {{/odes}}
-        </ol>
-  </statement>
-  <answer>
-        <ol>
-            {{#odes}}
-                <li>
+    </intro>
+    <!-- {{#odes}} -->
+    <knowl>
+        <content>
+            <p><m>{{ode}}</m></p>
+        </content>
+        <outtro>
+            <p>
 The ODE is {{form}}, so it can be solved by {{strategy}}.
-                </li>
-            {{/odes}}
-        </ol>
-  </answer>
-</exercise>
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/odes}} -->
+</knowl>
