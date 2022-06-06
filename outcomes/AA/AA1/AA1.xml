@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>
+For each of the following Initial Value Problems (IVPs), designate the following:
+      </p>
+      <ul>
+          <li>its Ordinary Differential Equation (ODE)</li>
+          <li>its Initial Value or Values (IVs)</li>
+          <li>the order of the IVP</li>
+          <li>its independent variable</li>
+          <li>its dependent variable</li>
+          <li>whether its solution is implicit or explicit</li>
+      </ul>
+      <p>
+Then show how to verify that its solution is valid.
+      </p>
+      <ol>
+          {{#ivps}}
+              <li>
+                  <ul>
+                      <li>IVP:
+                          <m>
+                              {{ode}};\qquad
+                              {{y}}({{t0}})=
+                              {{y0}}{{#yp0}},
+                                  {{y}}'({{t0}})=
+                                  {{yp0}}
+                              {{/yp0}}
+                          </m>
+                      </li>
+                      <li>Solution: <m>{{sol}}</m></li>
+                  </ul>
+              </li>
+          {{/ivps}}
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          {{#ivps}}
+              <li>
+                  <ul>
+                      <li>ODE: <m>{{ode}}</m></li>
+                      <li>IV(s): <m>
+                          {{y}}({{t0}})={{y0}}
+                          {{#yp0}},{{y}}'({{t0}})={{yp0}}{{/yp0}}
+                          </m></li>
+                      <li>Order: {{order}}</li>
+                      <li>Independent variable: <m>{{t}}</m></li>
+                      <li>Dependent variable: <m>{{y}}</m></li>
+                      <li>The solution <m>{{sol}}</m> is {{ex_im}}.</li>
+                  </ul>
+              </li>
+          {{/ivps}}
+      </ol>
+  </answer>
+</exercise>

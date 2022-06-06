@@ -1,1 +1,3 @@
-/builds/
+assets/**/seeds.json
+*.ipynb.sage-jupyter2
+dashboard.ipynb

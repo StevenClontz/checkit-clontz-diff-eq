@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+    <p>Explain how to find the particular solution to each given IVP.</p>
+      <ol>
+          {{#ivps}}
+        <li>
+        <me>
+          {{ode}};\qquad
+          {{var}}(0)={{iv1}},
+          {{var}}(0)={{iv2}}
+        </me>
+        </li>
+          {{/ivps}}
+      </ol>
+  </statement>
+  <answer>
+      {{#ivps}}
+        <me>{{ivp_sol}}</me>
+      {{/ivps}}
+  </answer>
+</exercise>
