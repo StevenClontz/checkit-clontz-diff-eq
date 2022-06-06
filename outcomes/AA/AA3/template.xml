@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.0">
+    <content>
+        <p>
+Show how to use Euler's method with two steps to approximate
+<m>x({{#final}}{{t}}{{/final}})</m> given the following
+IVP.
+        </p>
+        <p>
+            <m mode="display">
+x'={{xp}};\qquad
+{{#init}}x({{t}})={{x}}{{/init}}
+            </m>
+        </p>
+    </content>
+    <outtro>
+        <list>
+            {{#vals}}
+                <item>
+                    <p><m>x({{t}})\approx {{x}}</m></p>
+                </item>
+            {{/vals}}
+        </list>
+    </outtro>
+</knowl>

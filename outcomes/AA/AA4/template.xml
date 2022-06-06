@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.0">
+    <intro>
+        <p>
+Explain how to use an appropriate Existence and Uniqueness Theorem to determine
+the largest possible domain guaranteed for a unique solution to each IVP.
+        </p>
+    </intro>
+    <!-- {{#ivps}} -->
+    <knowl>
+        <content>
+            <p>
+                <m>
+{{ode}};\qquad
+{{y}}({{t0}})={{y0}}
+{{#yp0}},{{y}}'({{t0}})={{yp0}}{{/yp0}}
+{{#ypp0}},{{y}}''({{t0}})={{ypp0}}{{/ypp0}}
+                </m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+By the Linear ODE Existence and Uniqueness Theorem, the IVP has
+a unique solution defined on the interval <m>{{interval}}</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/ivps}} -->
+</knowl>

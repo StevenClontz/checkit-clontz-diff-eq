@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.0">
+    <content>
+        <p>
+Show how to use the below direction field for an ODE
+to approximate the value of <m>y({{othert}})</m> given
+an initial value of <m>y({{t0}})={{y0}}</m>.
+        </p>
+        <p>
+            <image
+                source="assets/AA2/generated/{{__seed__}}/field.png"
+                description="Slope field for {{ode}}."/>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>y({{othert}})\approx {{othery}}</m>
+        </p>
+    </outtro>
+</knowl>
