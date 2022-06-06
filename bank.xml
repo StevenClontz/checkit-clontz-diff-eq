@@ -7,7 +7,7 @@
         <outcome>
             <title>Structure of an IVP and Verifying Solutions</title>
             <slug>AA1</slug>
-            <path>AA/AA1</path>
+            <path>outcomes/AA/AA1</path>
             <description>
 Identify the structure of an initial value problem and its solution.
             </description>
@@ -15,7 +15,7 @@ Identify the structure of an initial value problem and its solution.
         <outcome>
             <title>Direction Fields</title>
             <slug>AA2</slug>
-            <path>AA/AA2</path>
+            <path>outcomes/AA/AA2</path>
             <description>
 Use technology to generate a direction/slope field for a first-order ODE,
 and interpret this field to approximate
@@ -25,7 +25,7 @@ the value of an IVP solution at a point.
         <outcome>
             <title>Euler's Method</title>
             <slug>AA3</slug>
-            <path>AA/AA3</path>
+            <path>outcomes/AA/AA3</path>
             <description>
 Implement Euler's Method for a first-order IVP to approximate
 the value of an IVP solution at a point.
@@ -34,7 +34,7 @@ the value of an IVP solution at a point.
         <outcome>
             <title>Existence/uniqueness IVP Theorems</title>
             <slug>AA4</slug>
-            <path>AA/AA4</path>
+            <path>outcomes/AA/AA4</path>
             <description>
 Apply appropriate theorems to determine the largest possible domain for which an IVP
 is guaranteed a unique solution.
@@ -43,7 +43,7 @@ is guaranteed a unique solution.
         <outcome>
             <title>Constant-Coefficient Linear Homogeneous First-Order IVPs</title>
             <slug>CC1</slug>
-            <path>CC/CC1</path>
+            <path>outcomes/CC/CC1</path>
             <description>
 Find general and particular solutions for constant-coefficient linear homogeneous first-order IVPs.
             </description>
@@ -51,7 +51,7 @@ Find general and particular solutions for constant-coefficient linear homogeneou
         <outcome>
             <title>Constant-Coefficient Linear Non-Homogeneous First-Order IVPs</title>
             <slug>CC2</slug>
-            <path>CC/CC2</path>
+            <path>outcomes/CC/CC2</path>
             <description>
 Find particular solutions for constant-coefficient linear non-homogeneous first-order IVPs.
             </description>
@@ -59,7 +59,7 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
         <outcome>
             <title>Constant-Coefficient Linear Homogeneous Higher-Order ODEs</title>
             <slug>CC3</slug>
-            <path>CC/CC3</path>
+            <path>outcomes/CC/CC3</path>
             <description>
 Find general solutions for constant-coefficient linear homogeneous higher-order ODEs.
             </description>
@@ -67,7 +67,7 @@ Find general solutions for constant-coefficient linear homogeneous higher-order 
         <outcome>
             <title>Constant-Coefficient Linear Homogeneous Second-Order IVPs</title>
             <slug>CC4</slug>
-            <path>CC/CC4</path>
+            <path>outcomes/CC/CC4</path>
             <description>
 Find particular solutions for constant-coefficient linear homogeneous second-order ODEs.
             </description>
@@ -75,7 +75,7 @@ Find particular solutions for constant-coefficient linear homogeneous second-ord
         <outcome>
             <title>Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs</title>
             <slug>CC5</slug>
-            <path>CC/CC5</path>
+            <path>outcomes/CC/CC5</path>
             <description>
 Find particular solutions for constant-coefficient linear homogeneous second-order ODEs.
             </description>
@@ -83,7 +83,7 @@ Find particular solutions for constant-coefficient linear homogeneous second-ord
         <outcome>
             <title>Autonomous Linear First-Order IVP Systems</title>
             <slug>CC6</slug>
-            <path>CC/CC6</path>
+            <path>outcomes/CC/CC6</path>
             <description>
 Find particular solutions for autonomous linear first-order IVP systems.
             </description>
@@ -91,7 +91,7 @@ Find particular solutions for autonomous linear first-order IVP systems.
         <outcome>
             <title>Discontinuous Functions and Distributions</title>
             <slug>DL1</slug>
-            <path>DL/DL1</path>
+            <path>outcomes/DL/DL1</path>
             <description>
 Illustrate and compute integrals involving the unit step function and Dirac-delta distribution.
             </description>
@@ -99,7 +99,7 @@ Illustrate and compute integrals involving the unit step function and Dirac-delt
         <outcome>
             <title>Laplace Transforms from Definition and Formulas</title>
             <slug>DL2</slug>
-            <path>DL/DL2</path>
+            <path>outcomes/DL/DL2</path>
             <description>
 Use a table of transforms to find Laplace transformations, and verify a given Laplace transformation from
 its integral definition.
@@ -108,7 +108,7 @@ its integral definition.
         <outcome>
             <title>Inverse Laplace Transforms and Convolution</title>
             <slug>DL3</slug>
-            <path>DL/DL3</path>
+            <path>outcomes/DL/DL3</path>
             <description>
 Compute inverse Laplace transforms using the convolution theorem.
             </description>
@@ -116,7 +116,7 @@ Compute inverse Laplace transforms using the convolution theorem.
         <outcome>
             <title>Using Laplace Transforms to Solve IVPs</title>
             <slug>DL4</slug>
-            <path>DL/DL4</path>
+            <path>outcomes/DL/DL4</path>
             <description>
 Solve a second-order constant-coefficient linear IVP involving a discontinuous function by
 applying Laplace transforms.
@@ -125,7 +125,7 @@ applying Laplace transforms.
         <outcome>
             <title>Linear Homogeneous First-Order IVPs</title>
             <slug>FO1</slug>
-            <path>FO/FO1</path>
+            <path>outcomes/FO/FO1</path>
             <description>
 Find particular solutions for constant-coefficient linear homogeneous first-order IVPs.
             </description>
@@ -133,7 +133,7 @@ Find particular solutions for constant-coefficient linear homogeneous first-orde
         <outcome>
             <title>Linear Non-Homogeneous First-Order IVPs</title>
             <slug>FO2</slug>
-            <path>FO/FO2</path>
+            <path>outcomes/FO/FO2</path>
             <description>
 Find particular solutions for constant-coefficient linear non-homogeneous first-order IVPs.
             </description>
@@ -141,7 +141,7 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
         <outcome>
             <title>Substitution for First-Order IVPs</title>
             <slug>FO3</slug>
-            <path>FO/FO3</path>
+            <path>outcomes/FO/FO3</path>
             <description>
 Find particular solutions for constant-coefficient linear non-homogeneous first-order IVPs.
             </description>
@@ -149,7 +149,7 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
         <outcome>
             <title>Exact First-Order IVPs</title>
             <slug>FO4</slug>
-            <path>FO/FO4</path>
+            <path>outcomes/FO/FO4</path>
             <description>
 Identify exact ODEs, and find their implicit solutions.
             </description>
@@ -157,7 +157,7 @@ Identify exact ODEs, and find their implicit solutions.
         <outcome>
             <title>Strategies for Solving IVPs</title>
             <slug>AA5</slug>
-            <path>AA/AA5</path>
+            <path>outcomes/AA/AA5</path>
             <description>
 Identify appropriate techniques for solving IVPs based on their structure.
             </description>
