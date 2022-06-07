@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-    <p>Explain how to find the solution to the given system of IVPs.</p>
-      <me>{{x_ode}};\qquad x(0)={{x0}}</me>
-      <me>{{y_ode}};\qquad y(0)={{y0}}</me>
-  </statement>
-  <answer>
-      <me>x={{x_sol}}</me>
-      <me>y={{y_sol}}</me>
-  </answer>
-</exercise>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Explain how to find the solution to the given system of IVPs.</p>
+        <p><me>{{x_ode}};\qquad x(0)={{x0}}</me></p>
+        <p><me>{{y_ode}};\qquad y(0)={{y0}}</me></p>
+    </content>
+    <outtro>
+        <p><me>y={{y_sol}}</me></p>
+        <p><me>x={{x_sol}}</me></p>
+    </outtro>
+</knowl>

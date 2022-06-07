@@ -1,18 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-      <p>
-          Explain how to use convolution along with the formula
-          <m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
-          inverse Laplace transform:
-      </p>
-      <me>
-          \mathcal{L}^{-1}\left\{ {{transform}} \right\}
-      </me>
-  </statement>
-  <answer>
-      <me>
-          {{pretransform}}
-      </me>
-  </answer>
-</exercise>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Explain how to use convolution along with the formula
+<m>\mathcal{L}\{e^{at}\}=\frac{1}{s-a}</m>to find the following
+inverse Laplace transform:
+        </p>
+        <p>
+            <me>
+\mathcal{L}^{-1}\left\{ {{transform}} \right\}
+            </me>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <me>
+{{pretransform}}
+            </me>
+        </p>
+    </outtro>
+</knowl>

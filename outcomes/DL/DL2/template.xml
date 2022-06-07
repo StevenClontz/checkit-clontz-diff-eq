@@ -1,31 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-      <ol>
-      <li>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
 Compute the Laplace transform of
 <m>y = {{pretransform}}</m> by using a transform table.
-      </li>
-          <li>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+\mathcal{L}\{y\} = {{transform}}
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
 Show why <m>\mathcal{L}\{ {{e_pretransform}} \}={{e_transform}}</m>
 using the integral definition of a Laplace transform.
-          </li>
-      </ol>
-  </statement>
-  <answer>
-      <ol>
-          <li>
-      <me>
-\mathcal{L}\{y\} = {{transform}}
-      </me>
-          </li>
-          <li>
-              <me>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
 \mathcal{L}\{ {{e_pretransform}} \}
 =\int_0^{\infty} {{e_pretransform}} e^{-st}\,dt
 ={{e_transform}}
-              </me>
-          </li>
-      </ol>
-  </answer>
-</exercise>
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>
