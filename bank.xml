@@ -17,8 +17,7 @@ Identify the structure of an initial value problem and its solution.
             <slug>AA2</slug>
             <path>outcomes/AA/AA2</path>
             <description>
-Use technology to generate a direction/slope field for a first-order ODE,
-and interpret this field to approximate
+Interpret direction/slope fields to approximate
 the value of an IVP solution at a point.
             </description>
         </outcome>
