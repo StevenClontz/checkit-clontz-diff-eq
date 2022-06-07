@@ -1,22 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-    <p>
-        Explain why one of the following ODEs is exact, and why the other is not.
-    </p>
-      {{#odes}}<me>{{.}}</me>{{/odes}}
-    <p>
-      Then find an implicit solution for the exact ODE
-      that satisfies the initial value
-        <m>y({{t0}})={{y0}}</m>.
-    </p>
-  </statement>
-  <answer>
-    <p>The following ODE is exact.</p>
-      <me>{{exact_ode}}</me>
-    <p>
-      Its implicit solution satisfying the initial value is:
-    </p>
-      <me>{{solution}}</me>
-  </answer>
-</exercise>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+Explain why one of the following ODEs is exact, and why the other is not.
+            </p>
+            <!-- {{#odes}} -->
+            <p><me>{{.}}</me></p>
+            <!-- {{/odes}} -->
+        </content>
+        <outtro>
+            <p>The following ODE is exact.</p>
+            <p><me>{{exact_ode}}</me></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+          <p>
+Find an implicit solution for the exact ODE
+that satisfies the initial value
+<m>y({{t0}})={{y0}}</m>.
+          </p>
+        </content>
+        <outtro>
+            <p>
+Its implicit solution satisfying the initial value is:
+            </p>
+            <p><me>{{solution}}</me></p>
+        </outtro>
+    </knowl>
+</knowl>
