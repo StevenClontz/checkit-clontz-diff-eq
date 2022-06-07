@@ -6,11 +6,11 @@ Explain and demonstrate how to find the general solution to the given ODE,
 and the particular solution that satisfies the given initial value.
         </p>
         <p><me>
-{{ode}};\qquad y\left({{t0}}\right)={{y0}}
+{{ode}};\qquad y\left(0\right)={{y0}}
         </me></p>
     </content>
     <outtro>
-        <p><me>{{ivp_sol}}</me></p>
-        <p><me>{{ode_sol}}</me></p>
+        <p>General solution: <m>{{ivp_sol}}</m></p>
+        <p>Particular solution: <m>{{ode_sol}}</m></p>
     </outtro>
 </knowl>
