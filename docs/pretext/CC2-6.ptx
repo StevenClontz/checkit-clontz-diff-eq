@@ -1,9 +1,0 @@
-<exercise checkit-seed="0006" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
-  <statement>
-    <p>Explain how to find the particular solution to the given IVP.</p>
-    <me>-3 \, {y'} - 6 \, e^{\left(4 \, t\right)} = -9 \, {y};\qquad y(0)=-5</me>
-  </statement>
-  <answer>
-    <me>y=-2 \, e^{\left(4 \, t\right)} - 3 \, e^{\left(3 \, t\right)}</me>
-  </answer>
-</exercise>

@@ -1,9 +1,0 @@
-<exercise checkit-seed="0003" checkit-slug="CC5" checkit-title="Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs">
-  <statement>
-    <p>Explain how to find the general solution to the given ODE.</p>
-      <me>3 \, e^{\left(2 \, t\right)} - 2 = {y} - {y''}</me>
-  </statement>
-  <answer>
-      <me>{y} = k_{1} e^{\left(-t\right)} + k_{2} e^{t} - e^{\left(2 \, t\right)} - 2</me>
-  </answer>
-</exercise>

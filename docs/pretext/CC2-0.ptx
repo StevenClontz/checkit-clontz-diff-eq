@@ -1,9 +1,0 @@
-<exercise checkit-seed="0000" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
-  <statement>
-    <p>Explain how to find the particular solution to the given IVP.</p>
-    <me>-3 \, {y'} - 9 \, e^{\left(-3 \, t\right)} = 9 \, {y};\qquad y(0)=-2</me>
-  </statement>
-  <answer>
-    <me>y=-3 \, t e^{\left(-3 \, t\right)} - 2 \, e^{\left(-3 \, t\right)}</me>
-  </answer>
-</exercise>

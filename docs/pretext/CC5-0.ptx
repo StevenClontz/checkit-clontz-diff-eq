@@ -1,9 +1,0 @@
-<exercise checkit-seed="0000" checkit-slug="CC5" checkit-title="Constant-Coefficient Linear Non-Homogeneous Second-Order IVPs">
-  <statement>
-    <p>Explain how to find the general solution to the given ODE.</p>
-      <me>4 \, {y'} + 3 \, {y} + {y''} + 72 \, e^{\left(3 \, t\right)} + 6 = 0</me>
-  </statement>
-  <answer>
-      <me>{y} = k_{2} e^{\left(-t\right)} + k_{1} e^{\left(-3 \, t\right)} - 3 \, e^{\left(3 \, t\right)} - 2</me>
-  </answer>
-</exercise>

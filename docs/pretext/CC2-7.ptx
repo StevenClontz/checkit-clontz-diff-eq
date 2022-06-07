@@ -1,9 +1,0 @@
-<exercise checkit-seed="0007" checkit-slug="CC2" checkit-title="Constant-Coefficient Linear Non-Homogeneous First-Order IVPs">
-  <statement>
-    <p>Explain how to find the particular solution to the given IVP.</p>
-    <me>-3 \, {y'} - 18 \, e^{\left(2 \, t\right)} = -15 \, {y};\qquad y(0)=6</me>
-  </statement>
-  <answer>
-    <me>y=4 \, e^{\left(5 \, t\right)} + 2 \, e^{\left(2 \, t\right)}</me>
-  </answer>
-</exercise>
