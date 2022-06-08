@@ -18,6 +18,21 @@ Compute the Laplace transform of
     <knowl>
         <content>
             <p>
+Find <m>y</m> which has the Laplace transform of
+<m>\mathcal{L}\{y\} = {{transform2}}</m> by using a transform table.
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <me>
+y = {{pretransform2}}
+                </me>
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
 Show why <m>\mathcal{L}\{ {{e_pretransform}} \}={{e_transform}}</m>
 using the integral definition of a Laplace transform.
             </p>
