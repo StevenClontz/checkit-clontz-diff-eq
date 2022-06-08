@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <content>
+    <intro>
         <p>
-Explain and demonstrate how to find the general solution to the given ODE.
+Explain and demonstrate how to find the general solution to each given ODE.
         </p>
-        <p><me>{{ode}}</me></p>
-    </content>
-    <outtro>
-        <p><me>{{ode_sol}}</me></p>
-    </outtro>
+    </intro>
+    <!-- {{#odes}} -->
+    <knowl>
+        <content>
+            <p><me>{{ode}}</me></p>
+        </content>
+        <outtro>
+            <p><me>{{ode_sol}}</me></p>
+        </outtro>
+    </knowl>
+    <!-- {{/odes}} -->
 </knowl>
