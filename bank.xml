@@ -122,11 +122,11 @@ applying Laplace transforms.
             </description>
         </outcome>
         <outcome>
-            <title>Linear Homogeneous First-Order IVPs</title>
+            <title>Separable IVPs</title>
             <slug>FO1</slug>
             <path>outcomes/FO/FO1</path>
             <description>
-Find particular solutions for constant-coefficient linear homogeneous first-order IVPs.
+Find particular solutions for separable first-order IVPs.
             </description>
         </outcome>
         <outcome>
@@ -134,7 +134,7 @@ Find particular solutions for constant-coefficient linear homogeneous first-orde
             <slug>FO2</slug>
             <path>outcomes/FO/FO2</path>
             <description>
-Find particular solutions for constant-coefficient linear non-homogeneous first-order IVPs.
+Find particular solutions for linear non-homogeneous first-order IVPs.
             </description>
         </outcome>
         <outcome>
@@ -142,7 +142,7 @@ Find particular solutions for constant-coefficient linear non-homogeneous first-
             <slug>FO3</slug>
             <path>outcomes/FO/FO3</path>
             <description>
-Find particular solutions for constant-coefficient linear non-homogeneous first-order IVPs.
+Use substitution to solve first-order IVPs.
             </description>
         </outcome>
         <outcome>
