@@ -2,10 +2,13 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Use an appropriate substitution
+Use an appropriate substitution from
+<m>{{sub0}}</m>, <m>{{sub1}}</m>, and <m>{{sub2}}</m>
 to show that all of the following ODEs may be transformed into
-the same linear ODE.
-(Do not fully solve these ODEs.)
+the same linear ODE of <m>t</m> and <m>u</m>.
+Assuming this common linear ODE has the general
+solution <m>{{linear_sol}}</m>, find an implicit general solution
+for each given ODE.
         </p>
     </intro>
     <!-- {{#odes}} -->
@@ -14,7 +17,9 @@ the same linear ODE.
             <p><m>{{ode}}</m></p>
         </content>
         <outtro>
-            <p>Let <m>{{sub}}</m>.</p>
+            <p>
+An implicit general solution is <m>{{sol}}</m>.
+            </p>
         </outtro>
     </knowl>
     <!-- {{/odes}} -->

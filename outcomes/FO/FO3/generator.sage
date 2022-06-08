@@ -1,26 +1,48 @@
 class Generator(BaseGenerator):
     def data(self):
-        t,y,u = var("t y u")
+        t,y,u,k = var("t y u k")
         yp = var("yp", latex_name="y'")
         up = var("up", latex_name="u'")
-        cons = list(srange(3,9))
-        shuffle(cons)
-        m,n,p,q,a,b=cons
-        linear = (up+m*t^p*u==n*t^q)
+        m,n,s,r,q = sample(range(2,8),5)
+        s,r = [_*choice([-1,1]) for _ in [s,r]]
+        b = (m-n)*choice([-1,1])*randrange(2,5)
+        linear = (t*up-n*u==b*t^m)
+        linear_sol = (u == k*t^n+b/(m-n)*t^m)
+        subs = [y/t,y^(-q),r*t+s*y]
         odes = [
             {
-                "ode": CheckIt.shuffled_equation(yp*t,-y,m*t^(p+1)*y,-n*t^(q+2)),
-                "sub": (u==y/t)
+                "ode": expand(CheckIt.shuffled_equation(
+                    yp*t,
+                    -(n+1)*y,
+                    -b*t^(m+1)
+                )*t^(randrange(2,5))),
+                "sol": (subs[0]==linear_sol.rhs()),
             },
             {
-                "ode": CheckIt.shuffled_equation(a,b*yp,a*m*t^(p+1),b*m*y*t^p,-n*t^q),
-                "sub": (u==a*t+b*y)
+                "ode": expand(CheckIt.shuffled_equation(
+                    n,
+                    q*t*y*yp,
+                    b*t^m*y^q
+                )*t^(randrange(2,5))),
+                "sol": (subs[1]==linear_sol.rhs()),
             },
             {
-                "ode": CheckIt.shuffled_equation((1-a)*yp,m*t^p*y,-n*t^q*y^a),
-                "sub": (u==y^(1-a))
+                "ode": expand(CheckIt.shuffled_equation(
+                    (r-n*r)*t,
+                    s*t*yp,
+                    -n*s*y,
+                    -b*t^m
+                )*t^(randrange(2,5))),
+                "sol": (subs[2]==linear_sol.rhs()),
             },
         ]
         shuffle(odes)
 
-        return {"odes":odes, "linear":linear}
+        return {
+            "odes":odes, 
+            "linear":linear,
+            "linear_sol":linear_sol,
+            "sub0": (u==subs[0]),
+            "sub1": (u==subs[1]),
+            "sub2": (u==subs[2]),
+        }
