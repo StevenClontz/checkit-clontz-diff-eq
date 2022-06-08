@@ -4,32 +4,43 @@ class Generator(BaseGenerator):
         y = var("y")
         d = dirac_delta
         u = unit_step
-        avals = [choice([1,2])]
-        f = e^(randrange(2,6)*t)*randrange(2,4)
-        for _ in range(6):
-            avals.append(avals[-1]+choice([1,1,2]))
-        def d_nont():
-            b = avals[0]
-            a = avals[2]
-            c = avals[4]
-            integrand = f.diff()*d(t-a)
-            value = f.diff(t)(t=a)
-            return {"b":b,"c":c,"integrand":integrand,"value":value}
-        def u_int():
-            b = avals[1]
-            a = avals[2]
-            c = avals[5]
-            integrand = f.diff()*u(t-a)
-            value = f(t=c)-f(t=a)
-            return {"b":b,"c":c,"integrand":integrand,"value":value}
-        def d_t():
-            b = avals[3]
-            a = avals[2]
-            c = avals[6]
-            integrand = f.diff()*d(t-a)
-            value = 0
-            return {"b":b,"c":c,"integrand":integrand,"value":value}
-        ints = [d_nont(),u_int(),d_t()]
+
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*d(t-a)*exp(l*t)
+        value = 0
+        ints = [{"b":b,"c":c,"integrand":integrand,"value":value}]
+        
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*d(t-b)*exp(l*t)
+        value = k*l*exp(l*b)
+        ints += [{"b":a,"c":c,"integrand":integrand,"value":value}]
+        
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*d(t-c)*exp(l*t)
+        value = 0
+        ints += [{"b":a,"c":b,"integrand":integrand,"value":value}]
+
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*u(t-a)*exp(l*t)
+        value = k*exp(l*c)-k*exp(l*b)
+        ints += [{"b":b,"c":c,"integrand":integrand,"value":value}]
+        
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*u(t-b)*exp(l*t)
+        value = k*exp(l*c)-k*exp(l*b)
+        ints += [{"b":a,"c":c,"integrand":integrand,"value":value}]
+        
+        a,b,c,k,l = sample(range(2,10),5)
+        a,b,c = sorted([a,b,c])
+        integrand = k*l*u(t-c)*exp(l*t)
+        value = 0
+        ints += [{"b":a,"c":b,"integrand":integrand,"value":value}]
+
         shuffle(ints)
 
         return {"integrals":ints}

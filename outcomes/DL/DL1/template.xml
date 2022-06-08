@@ -2,8 +2,8 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-        Illustrate each of the following integrals. Then explain how
-            to compute each.
+Illustrate each of the following integrals. Then explain and
+demonstrate how to compute each.
         </p>
     </intro>
     <!-- {{#integrals}} -->
